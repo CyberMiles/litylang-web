@@ -1,27 +1,45 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>LityLang</title>
+    <title>Litylang</title>
     <link>https://daryllcheng.github.io/litylang/</link>
-    <description>Recent content on LityLang</description>
+    <description>Recent content on Litylang</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 22 Jun 2018 15:29:53 +0800</lastBuildDate>
+    <lastBuildDate>Fri, 22 Jun 2018 15:25:40 +0800</lastBuildDate>
     
 	<atom:link href="https://daryllcheng.github.io/litylang/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>Talks</title>
-      <link>https://daryllcheng.github.io/litylang/documents/talks/</link>
-      <pubDate>Fri, 22 Jun 2018 15:29:53 +0800</pubDate>
+      <title>Requirements</title>
+      <link>https://daryllcheng.github.io/litylang/documents/requirements/</link>
+      <pubDate>Fri, 22 Jun 2018 15:25:40 +0800</pubDate>
       
-      <guid>https://daryllcheng.github.io/litylang/documents/talks/</guid>
-      <description></description>
+      <guid>https://daryllcheng.github.io/litylang/documents/requirements/</guid>
+      <description>Chapter X Some Chapter title Lorem Ipsum.</description>
     </item>
     
     <item>
-      <title>Community_resources</title>
+      <title>References</title>
+      <link>https://daryllcheng.github.io/litylang/documents/references/</link>
+      <pubDate>Fri, 22 Jun 2018 15:25:40 +0800</pubDate>
+      
+      <guid>https://daryllcheng.github.io/litylang/documents/references/</guid>
+      <description>Chapter X Some Chapter title Lorem Ipsum.</description>
+    </item>
+    
+    <item>
+      <title>Talks</title>
+      <link>https://daryllcheng.github.io/litylang/documents/talks/</link>
+      <pubDate>Fri, 22 Jun 2018 15:25:40 +0800</pubDate>
+      
+      <guid>https://daryllcheng.github.io/litylang/documents/talks/</guid>
+      <description>Chapter X Some Chapter title Lorem Ipsum.</description>
+    </item>
+    
+    <item>
+      <title>Community Resources</title>
       <link>https://daryllcheng.github.io/litylang/help/community_resources/</link>
       <pubDate>Fri, 22 Jun 2018 15:28:30 +0800</pubDate>
       
@@ -30,7 +48,7 @@
     </item>
     
     <item>
-      <title>Stay_informed</title>
+      <title>Stay Informed</title>
       <link>https://daryllcheng.github.io/litylang/help/stay_informed/</link>
       <pubDate>Fri, 22 Jun 2018 15:28:20 +0800</pubDate>
       
@@ -39,7 +57,7 @@
     </item>
     
     <item>
-      <title>Get_help</title>
+      <title>Get Help</title>
       <link>https://daryllcheng.github.io/litylang/help/get_help/</link>
       <pubDate>Fri, 22 Jun 2018 15:28:07 +0800</pubDate>
       
@@ -57,7 +75,7 @@
     </item>
     
     <item>
-      <title>Developer_resources</title>
+      <title>Developer Resources</title>
       <link>https://daryllcheng.github.io/litylang/project/developer_resources/</link>
       <pubDate>Fri, 22 Jun 2018 15:27:29 +0800</pubDate>
       
@@ -66,7 +84,7 @@
     </item>
     
     <item>
-      <title>Version_history</title>
+      <title>Version History</title>
       <link>https://daryllcheng.github.io/litylang/project/version_history/</link>
       <pubDate>Fri, 22 Jun 2018 15:27:20 +0800</pubDate>
       
@@ -89,24 +107,6 @@
       <pubDate>Fri, 22 Jun 2018 15:26:31 +0800</pubDate>
       
       <guid>https://daryllcheng.github.io/litylang/packages/standard/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>References</title>
-      <link>https://daryllcheng.github.io/litylang/documents/references/</link>
-      <pubDate>Fri, 22 Jun 2018 15:24:46 +0800</pubDate>
-      
-      <guid>https://daryllcheng.github.io/litylang/documents/references/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Requirements</title>
-      <link>https://daryllcheng.github.io/litylang/documents/requirements/</link>
-      <pubDate>Fri, 22 Jun 2018 15:24:20 +0800</pubDate>
-      
-      <guid>https://daryllcheng.github.io/litylang/documents/requirements/</guid>
       <description></description>
     </item>
     

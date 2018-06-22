@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Learn on LityLang</title>
+    <title>Learn on Litylang</title>
     <link>https://daryllcheng.github.io/litylang/documents/learn/</link>
-    <description>Recent content in Learn on LityLang</description>
+    <description>Recent content in Learn on Litylang</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 22 Jun 2018 15:29:17 +0800</lastBuildDate>
+    <lastBuildDate>Fri, 22 Jun 2018 15:25:40 +0800</lastBuildDate>
     
 	<atom:link href="https://daryllcheng.github.io/litylang/documents/learn/index.xml" rel="self" type="application/rss+xml" />
     

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Help on LityLang</title>
+    <title>Help on Litylang</title>
     <link>https://daryllcheng.github.io/litylang/help/</link>
-    <description>Recent content in Help on LityLang</description>
+    <description>Recent content in Help on Litylang</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 22 Jun 2018 15:25:32 +0800</lastBuildDate>
@@ -12,7 +12,7 @@
     
     
     <item>
-      <title>Community_resources</title>
+      <title>Community Resources</title>
       <link>https://daryllcheng.github.io/litylang/help/community_resources/</link>
       <pubDate>Fri, 22 Jun 2018 15:28:30 +0800</pubDate>
       
@@ -21,7 +21,7 @@
     </item>
     
     <item>
-      <title>Stay_informed</title>
+      <title>Stay Informed</title>
       <link>https://daryllcheng.github.io/litylang/help/stay_informed/</link>
       <pubDate>Fri, 22 Jun 2018 15:28:20 +0800</pubDate>
       
@@ -30,7 +30,7 @@
     </item>
     
     <item>
-      <title>Get_help</title>
+      <title>Get Help</title>
       <link>https://daryllcheng.github.io/litylang/help/get_help/</link>
       <pubDate>Fri, 22 Jun 2018 15:28:07 +0800</pubDate>
       

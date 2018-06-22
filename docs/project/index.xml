@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>The Project on LityLang</title>
+    <title>The Project on Litylang</title>
     <link>https://daryllcheng.github.io/litylang/project/</link>
-    <description>Recent content in The Project on LityLang</description>
+    <description>Recent content in The Project on Litylang</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 22 Jun 2018 15:25:25 +0800</lastBuildDate>
@@ -21,7 +21,7 @@
     </item>
     
     <item>
-      <title>Developer_resources</title>
+      <title>Developer Resources</title>
       <link>https://daryllcheng.github.io/litylang/project/developer_resources/</link>
       <pubDate>Fri, 22 Jun 2018 15:27:29 +0800</pubDate>
       
@@ -30,7 +30,7 @@
     </item>
     
     <item>
-      <title>Version_history</title>
+      <title>Version History</title>
       <link>https://daryllcheng.github.io/litylang/project/version_history/</link>
       <pubDate>Fri, 22 Jun 2018 15:27:20 +0800</pubDate>
       
