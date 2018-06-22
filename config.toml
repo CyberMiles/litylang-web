@@ -1,5 +1,5 @@
 baseURL = "https://daryllcheng.github.io/litylang/"
 languageCode = "en-us"
-title = "LityLang"
+title = "Litylang"
 theme = "hugo-theme-learn"
 publishDir = "docs"
