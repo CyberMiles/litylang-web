@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Documents on LityLang</title>
+    <link>http://example.org/documents/</link>
+    <description>Recent content in Documents on LityLang</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 22 Jun 2018 15:00:50 +0800</lastBuildDate>
+    
+	<atom:link href="http://example.org/documents/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Talks</title>
+      <link>http://example.org/documents/talks/</link>
+      <pubDate>Fri, 22 Jun 2018 15:29:53 +0800</pubDate>
+      
+      <guid>http://example.org/documents/talks/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>References</title>
+      <link>http://example.org/documents/references/</link>
+      <pubDate>Fri, 22 Jun 2018 15:24:46 +0800</pubDate>
+      
+      <guid>http://example.org/documents/references/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Requirements</title>
+      <link>http://example.org/documents/requirements/</link>
+      <pubDate>Fri, 22 Jun 2018 15:24:20 +0800</pubDate>
+      
+      <guid>http://example.org/documents/requirements/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

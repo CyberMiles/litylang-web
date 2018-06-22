@@ -1,4 +1,5 @@
-baseURL = "http://example.org/"
+baseURL = "https://daryllcheng.github.io/litylang/"
 languageCode = "en-us"
 title = "LityLang"
 theme = "hugo-theme-learn"
+publishDir = "docs"
