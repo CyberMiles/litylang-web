@@ -1,4 +1,4 @@
-baseURL = "https://daryllcheng.github.io/litylang/"
+baseURL = "https://cybermiles.github.io/litylang-web/"
 languageCode = "en-us"
 title = "Litylang"
 theme = "hugo-theme-learn"
