@@ -1,112 +1,112 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>LityLang</title>
-    <link>http://example.org/</link>
-    <description>Recent content on LityLang</description>
+    <title>Litylang</title>
+    <link>https://cybermiles.github.io/litylang-web/</link>
+    <description>Recent content on Litylang</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 22 Jun 2018 15:29:53 +0800</lastBuildDate>
+    <lastBuildDate>Fri, 22 Jun 2018 15:25:40 +0800</lastBuildDate>
     
-	<atom:link href="http://example.org/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://cybermiles.github.io/litylang-web/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Requirements</title>
+      <link>https://cybermiles.github.io/litylang-web/documents/requirements/</link>
+      <pubDate>Fri, 22 Jun 2018 15:25:40 +0800</pubDate>
+      
+      <guid>https://cybermiles.github.io/litylang-web/documents/requirements/</guid>
+      <description>Chapter X Some Chapter title Lorem Ipsum.</description>
+    </item>
+    
+    <item>
+      <title>References</title>
+      <link>https://cybermiles.github.io/litylang-web/documents/references/</link>
+      <pubDate>Fri, 22 Jun 2018 15:25:40 +0800</pubDate>
+      
+      <guid>https://cybermiles.github.io/litylang-web/documents/references/</guid>
+      <description>Chapter X Some Chapter title Lorem Ipsum.</description>
+    </item>
     
     <item>
       <title>Talks</title>
-      <link>http://example.org/documents/talks/</link>
-      <pubDate>Fri, 22 Jun 2018 15:29:53 +0800</pubDate>
+      <link>https://cybermiles.github.io/litylang-web/documents/talks/</link>
+      <pubDate>Fri, 22 Jun 2018 15:25:40 +0800</pubDate>
       
-      <guid>http://example.org/documents/talks/</guid>
-      <description></description>
+      <guid>https://cybermiles.github.io/litylang-web/documents/talks/</guid>
+      <description>Chapter X Some Chapter title Lorem Ipsum.</description>
     </item>
     
     <item>
-      <title>Community_resources</title>
-      <link>http://example.org/help/community_resources/</link>
+      <title>Community Resources</title>
+      <link>https://cybermiles.github.io/litylang-web/help/community_resources/</link>
       <pubDate>Fri, 22 Jun 2018 15:28:30 +0800</pubDate>
       
-      <guid>http://example.org/help/community_resources/</guid>
+      <guid>https://cybermiles.github.io/litylang-web/help/community_resources/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Stay_informed</title>
-      <link>http://example.org/help/stay_informed/</link>
+      <title>Stay Informed</title>
+      <link>https://cybermiles.github.io/litylang-web/help/stay_informed/</link>
       <pubDate>Fri, 22 Jun 2018 15:28:20 +0800</pubDate>
       
-      <guid>http://example.org/help/stay_informed/</guid>
+      <guid>https://cybermiles.github.io/litylang-web/help/stay_informed/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Get_help</title>
-      <link>http://example.org/help/get_help/</link>
+      <title>Get Help</title>
+      <link>https://cybermiles.github.io/litylang-web/help/get_help/</link>
       <pubDate>Fri, 22 Jun 2018 15:28:07 +0800</pubDate>
       
-      <guid>http://example.org/help/get_help/</guid>
+      <guid>https://cybermiles.github.io/litylang-web/help/get_help/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Contribution</title>
-      <link>http://example.org/project/contribution/</link>
+      <link>https://cybermiles.github.io/litylang-web/project/contribution/</link>
       <pubDate>Fri, 22 Jun 2018 15:27:42 +0800</pubDate>
       
-      <guid>http://example.org/project/contribution/</guid>
+      <guid>https://cybermiles.github.io/litylang-web/project/contribution/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Developer_resources</title>
-      <link>http://example.org/project/developer_resources/</link>
+      <title>Developer Resources</title>
+      <link>https://cybermiles.github.io/litylang-web/project/developer_resources/</link>
       <pubDate>Fri, 22 Jun 2018 15:27:29 +0800</pubDate>
       
-      <guid>http://example.org/project/developer_resources/</guid>
+      <guid>https://cybermiles.github.io/litylang-web/project/developer_resources/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Version_history</title>
-      <link>http://example.org/project/version_history/</link>
+      <title>Version History</title>
+      <link>https://cybermiles.github.io/litylang-web/project/version_history/</link>
       <pubDate>Fri, 22 Jun 2018 15:27:20 +0800</pubDate>
       
-      <guid>http://example.org/project/version_history/</guid>
+      <guid>https://cybermiles.github.io/litylang-web/project/version_history/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Other</title>
-      <link>http://example.org/packages/other/</link>
+      <link>https://cybermiles.github.io/litylang-web/packages/other/</link>
       <pubDate>Fri, 22 Jun 2018 15:26:36 +0800</pubDate>
       
-      <guid>http://example.org/packages/other/</guid>
+      <guid>https://cybermiles.github.io/litylang-web/packages/other/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Standard</title>
-      <link>http://example.org/packages/standard/</link>
+      <link>https://cybermiles.github.io/litylang-web/packages/standard/</link>
       <pubDate>Fri, 22 Jun 2018 15:26:31 +0800</pubDate>
       
-      <guid>http://example.org/packages/standard/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>References</title>
-      <link>http://example.org/documents/references/</link>
-      <pubDate>Fri, 22 Jun 2018 15:24:46 +0800</pubDate>
-      
-      <guid>http://example.org/documents/references/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Requirements</title>
-      <link>http://example.org/documents/requirements/</link>
-      <pubDate>Fri, 22 Jun 2018 15:24:20 +0800</pubDate>
-      
-      <guid>http://example.org/documents/requirements/</guid>
+      <guid>https://cybermiles.github.io/litylang-web/packages/standard/</guid>
       <description></description>
     </item>
     
