@@ -2,39 +2,39 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Documents on Litylang</title>
-    <link>https://daryllcheng.github.io/litylang/documents/</link>
+    <link>https://cybermiles.github.io/litylang-web/documents/</link>
     <description>Recent content in Documents on Litylang</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 22 Jun 2018 15:00:50 +0800</lastBuildDate>
     
-	<atom:link href="https://daryllcheng.github.io/litylang/documents/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://cybermiles.github.io/litylang-web/documents/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Requirements</title>
-      <link>https://daryllcheng.github.io/litylang/documents/requirements/</link>
+      <link>https://cybermiles.github.io/litylang-web/documents/requirements/</link>
       <pubDate>Fri, 22 Jun 2018 15:25:40 +0800</pubDate>
       
-      <guid>https://daryllcheng.github.io/litylang/documents/requirements/</guid>
+      <guid>https://cybermiles.github.io/litylang-web/documents/requirements/</guid>
       <description>Chapter X Some Chapter title Lorem Ipsum.</description>
     </item>
     
     <item>
       <title>References</title>
-      <link>https://daryllcheng.github.io/litylang/documents/references/</link>
+      <link>https://cybermiles.github.io/litylang-web/documents/references/</link>
       <pubDate>Fri, 22 Jun 2018 15:25:40 +0800</pubDate>
       
-      <guid>https://daryllcheng.github.io/litylang/documents/references/</guid>
+      <guid>https://cybermiles.github.io/litylang-web/documents/references/</guid>
       <description>Chapter X Some Chapter title Lorem Ipsum.</description>
     </item>
     
     <item>
       <title>Talks</title>
-      <link>https://daryllcheng.github.io/litylang/documents/talks/</link>
+      <link>https://cybermiles.github.io/litylang-web/documents/talks/</link>
       <pubDate>Fri, 22 Jun 2018 15:25:40 +0800</pubDate>
       
-      <guid>https://daryllcheng.github.io/litylang/documents/talks/</guid>
+      <guid>https://cybermiles.github.io/litylang-web/documents/talks/</guid>
       <description>Chapter X Some Chapter title Lorem Ipsum.</description>
     </item>
     
