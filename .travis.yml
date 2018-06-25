@@ -8,7 +8,10 @@ install:
   - rm -rf public || exit 0
 # Build the website
 script:
-  - binaries/hugo --theme=hugo-theme-learn
+  - hugo 
+
+   # Create a CNAME file which maps your site to your custom domain
+  - echo 'www.litylang.org' > public/CNAME
 
 # Deploy to GitHub pages
 deploy:
