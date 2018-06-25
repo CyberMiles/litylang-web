@@ -8,7 +8,7 @@ install:
   - rm -rf public || exit 0
 # Build the website
 script:
-  - binaries/hugo --theme=fresh
+  - binaries/hugo --theme=hugo-theme-learn
 
 # Deploy to GitHub pages
 deploy:
