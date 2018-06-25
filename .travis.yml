@@ -6,7 +6,8 @@ go:
 install:
   - go get github.com/spf13/hugo # This provides the latest version of Hugo to Travis CI
 
-script:
+script:  
+  - rm -rf public || exit 0
   - hugo # This commands builds your website on travis
 
    # Create a CNAME file which maps your site to your custom domain

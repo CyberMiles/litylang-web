@@ -1007,12 +1007,13 @@ td {
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
-    width: 70%;
     display: inline-block;
-    float: left;
 }
 #body #breadcrumbs span {
     padding: 0 0.1rem;
+}
+#mobile-logo {
+    display: none;
 }
 @media only all and (max-width: 59.938em) {
     #sidebar {
@@ -1050,6 +1051,25 @@ td {
         z-index: 10;
         background: rgba(255, 255, 255, 0.5);
         cursor: pointer;
+    }
+    #body #breadcrumbs {
+        width: 70%;
+        float: left;
+    }
+    #top-bar {
+        background: #0D47A1;
+    }
+    #sidebar-toggle .fa-bars {
+        color: white;
+    }
+    #mobile-logo {
+        width: 30%;
+        float:right;
+        display: block;
+    }
+    #mobile-logo img {
+        margin: 0px;
+        padding: 10px;
     }
 }
 .copy-to-clipboard {
