@@ -988,7 +988,7 @@ td {
 }
 #top-bar {
     background: #F6F6F6;
-    border-radius: 2px;
+    border-radius: 10px;
     padding: 0 1rem;
     height: 0;
     min-height: 3rem;
@@ -1061,6 +1061,15 @@ td {
     }
     #sidebar-toggle .fa-bars {
         color: white;
+    }
+    #index-header .fa-bars {
+        color: #0D47A1;
+    }
+    #index-header #index-logo {
+        margin: 0px;
+        width: 35px;
+        padding: 0px;
+        display: inline-block;
     }
     #mobile-logo {
         width: 30%;
