@@ -1,4 +1,4 @@
-baseURL = "https://litylang.org"
+baseURL = "http://www.litylang.org"
 languageCode = "en-us"
 title = "Litylang"
 theme = "hugo-theme-learn"
