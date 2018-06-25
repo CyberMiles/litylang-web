@@ -1,4 +1,4 @@
-baseURL = "https://cybermiles.github.io/"
+baseURL = "https://lity.org"
 languageCode = "en-us"
 title = "Litylang"
 theme = "hugo-theme-learn"
@@ -19,5 +19,5 @@ weight = 10
 
 [[Languages.en.menu.shortcuts]]
 name = "<i class='fa fa-fw fa-bullhorn'></i> Credits"
-url = "/credits"
+url = "credits"
 weight = 30
