@@ -1161,12 +1161,19 @@ pre .copy-to-clipboard:hover {
 
 /* Custom Footer */
 .custom-footer {
-    background: #322A38;
-    padding: 50px 20px;
+    display: none;
 }
 
-.custom-footer .copyright-text {
-    color: white;
-    font-size: 12px;
-    margin-top: 10px;
+@media only all and (max-width: 47.938em) {
+    .custom-footer {
+        display: block;
+        background: #322A38;
+        padding: 50px 20px;
+    }
+    
+    .custom-footer .copyright-text {
+        color: white;
+        font-size: 12px;
+        margin-top: 10px;
+    }
 }
