@@ -1056,11 +1056,8 @@ td {
         width: 70%;
         float: left;
     }
-    #top-bar {
-        background: #0D47A1;
-    }
     #sidebar-toggle .fa-bars {
-        color: white;
+        color: #0D47A1;
     }
     #index-header .fa-bars {
         color: #0D47A1;
@@ -1160,3 +1157,16 @@ pre .copy-to-clipboard:hover {
 }
 
 /*# sourceMappingURL=theme.css.map */
+
+
+/* Custom Footer */
+.custom-footer {
+    background: #0A3880;
+    padding: 50px 20px;
+}
+
+.custom-footer .copyright-text {
+    color: white;
+    font-size: 12px;
+    margin-top: 10px;
+}
