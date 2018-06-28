@@ -1177,3 +1177,8 @@ pre .copy-to-clipboard:hover {
         margin-top: 10px;
     }
 }
+
+/* Sidebar TOC */
+#sidebar-toc #TableOfContents ul > li:first-child { 
+    display: none;
+}

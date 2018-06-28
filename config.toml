@@ -2,7 +2,7 @@ baseURL = "http://www.litylang.org"
 languageCode = "en-us"
 title = "Litylang"
 theme = "hugo-theme-learn"
-# publishDir = "docs"
+showVisitedLinks = false
 
 
 [Languages]
