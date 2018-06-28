@@ -1,13 +1,13 @@
 baseURL = "http://www.litylang.org"
 languageCode = "en-us"
-title = "Litylang"
+title = "Documentation for litylang"
 theme = "hugo-theme-learn"
 showVisitedLinks = false
 
 
 [Languages]
 [Languages.en]
-title = "Litylang"
+title = "Documentation for litylang"
 weight = 1
 languageName = "English"
 

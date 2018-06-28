@@ -1182,3 +1182,14 @@ pre .copy-to-clipboard:hover {
 #sidebar-toc #TableOfContents ul > li:first-child { 
     display: none;
 }
+
+#index-header {
+    display: none;
+}
+
+@media only all and (max-width: 47.938em) {
+    #index-header {
+        display: block;
+    }
+}
+
