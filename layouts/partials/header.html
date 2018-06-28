@@ -54,7 +54,7 @@
                   </div>
                   {{ end }}
                 {{ end }}
-                {{$toc := true}}
+                {{$toc := not .Params.disableToc }}
                 <a id="mobile-logo" href="http://www.litylang.org">
                     <img src='{{ "/images/lity_blue@3x.png" | relURL }}' alt="lityLogo" />
                   </a>
