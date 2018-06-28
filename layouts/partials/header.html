@@ -54,7 +54,7 @@
                   </div>
                   {{ end }}
                 {{ end }}
-                {{$toc := (and (not .Params.disableToc) (not .Params.chapter))}}
+                {{$toc := true}}
                 <a id="mobile-logo" href="http://www.litylang.org">
                     <img src='{{ "/images/lity_blue@3x.png" | relURL }}' alt="lityLogo" />
                   </a>
@@ -64,10 +64,9 @@
                           <i class="fa fa-bars"></i>
                         </a>
                     </span>
-                  <!-- {{ if $toc }}
+                  {{ if $toc }}
                   <span id="toc-menu"><i class="fa fa-list-alt"></i></span>
                   {{ end }}
-                  -->
                   <span class="links">
                     {{ template "breadcrumb" dict "page" . "value" .Title }}   
                   </span>
