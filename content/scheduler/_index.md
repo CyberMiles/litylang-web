@@ -26,7 +26,7 @@ One of the most glaring limitations of the Ethereum platform is the lack of supp
 
 That is about to change. Through engineering optimization and innovation, the CyberMiles blockchain will support timer-based transactions, including fully Ethereum-compatible fund transfers and contract executions scheduled for the future. We will also introduce a new language keyword, schedule, to support timer-based executions inside smart contracts. 
 
-# Timer challenge in Ethereum
+# Challenge
 
 The lack of timer support in Ethereum is not an accident or oversight. It is due to the lack of exact time on the Proof-of-Work blockchain system. When a transaction is submitted to a blockchain, it arrives on different nodes at different times; it could be executed by different nodes at slightly different times; it could be packaged into the next block or the next 100th block by miners. Not being able to predict when (or even whether) a transaction will be executed and confirmed by miners, Ethereum does not provide a facility to trigger operations on a future time.
 
@@ -36,7 +36,7 @@ There are also many efforts to create a decentralized timer system (called [alar
 
 > *The blockchain uncertainty principle*: the timing accuracy and cost of the of scheduled tasks are complementary variables. A short block time leads to more accurate execution time window but also more system overhead to frequently check for due tasks.
 
-# CyberMiles and Lity support for timers
+# CyberMiles support
 
 The CyberMiles blockchain is a new generation of DPoS blockchain that features short block time and fast finality. Therefore, it is possible for validator nodes to act on scheduled tasks within the time window of a block. After the validators reach consensus on a new block, all nodes will examine the block's official timestamp and then execute tasks scheduled within the next block time from this timestamp. Since the official timestamp is created by the block proposer node, and the block is instantly final, this approach does not depend on each node's clock and hence produces deterministic outcomes on all nodes. 
 

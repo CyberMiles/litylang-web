@@ -84,12 +84,12 @@ can also [build from the source](http://travis.readthedocs.io/en/latest/getting-
 Next, from the attached web3-cmt console, you can delpoy the smart contract and receive an address for the deployment.
 
 ```
-> owner = '0x1234...'
+> var owner = cmt.accounts[0]
 > var bc = '60806040526004361061004157 ...'
 > var abi = [...]
 
 > var contract = web3.eth.contract(abi)
-> var contractInstance = contract.new(owner, {data : bc , from : owner})
+> var contractInstance = contract.new({data : bc , from : owner})
 > contractInstance.address
 "0xabcdCONTRACTADDRESS"
 ```
