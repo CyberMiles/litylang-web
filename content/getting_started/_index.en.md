@@ -23,94 +23,82 @@ $ which lityc
 /home/username/bin/lityc
 ```
 
-# Hello World
+# A reverse Hello World
 
 The code below shows a simple Lity contract with a libENI call. 
 The single libENI call costs hundreds of millions Ethereum gas to run when implemented in Solidity -- it showcases the capability of Lity and libENI.
 While all Solidity smart contracts work on Lity, this example uses Lity-specific features and will not run on Solidity / Ethereum. 
+First, create the text file `Reverse.lity` with the following content.
+It uses a libENI extension function `reverse`, which is not available 
+in standard Solidity.
 
 ```
-TBD
+pragma solidity ^0.4.23;
+  
+contract ReverseContract {
+  function reverse(string input) public returns(string) {
+    string memory output = eni("reverse", input);
+    return output;
+  }
+}
 ```
 
 Next, let's use `lityc` to compile the source into byte code.
 
 ```
-TBD
+$ lityc --bin Reverse.lity
+======= ./Reverse.lity:ReverseContract =======
+Binary:
+60806040526004361061004157 ...
 ```
 
-# Start a local CyberMiles node
+Then, we also use `lityc` to generate the interface definition required 
+by the virtual machine to register the contract.
+
+```
+$ lityc --abi Reverse.lity
+======= ./Reverse.lity:ReverseContract =======
+Contract JSON ABI
+[{"constant":false,"inputs":[{"name":"input","type":"string"}],"name":"reverse","outputs":[{"name":"","type":"string"}],"payable":false,"stateMutability":"nonpayable","type":"function"}]
+```
+
+# Start a CyberMiles node
 
 The Lity software we downloaded includes the `lityc` compiler and development tools.
 But in order to run the smart contract, we also need the Lity virtual machine
 with libENI support. You will need to run a CyberMiles blockchain node for this.
-First, please [install docker](https://docs.docker.com/install/) on your computer.
-Then, you can start the local CyberMiles node inside docker with the latest Travis build.
-Let's initialize a docker image for the Travis build first.
 
-```
-$ docker run --rm -v ~/volumes/local:/travis ywonline/travis:staging node init --home /travis
-```
+The easiest way to do this is to simply run a [Docker image for a local single node](http://travis.readthedocs.io/en/latest/getting-started.html#use-docker).
+Make sure that you get to the step where you connect to the node's web3-cmt console.
 
-The node's data directory is `~/volumes/local` on the local computer. Let's install libENI into it.
+Alternatively, if you are running CentOS or Ubuntu Linux distributions, you
+can also [build from the source](http://travis.readthedocs.io/en/latest/getting-started.html#build-from-source).
 
-```
-> tar zxvf $HOME/libeni.tgz -C $HOME
-> mkdir -p $HOME/volumes/local/eni
-> cp -r $HOME/libeni-1.2.0/lib $HOME/volumes/local/eni/lib
-```
-
-Now you can start the CyberMiles Travis node in docker.
-
-```
-$ docker run --name travis -v ~/volumes/local:/travis -t -p 26657:26657 -p 8545:8545 ywonline/travis:staging node start --home /travis
-```
-
-At this point, you can Ctrl-C to exit to the terminal and travis will remain running in the background.
-You can check the CyberMiles Travis node's logs at anytime via the following docker command.
-
-```
-$ docker logs -f travis
-```
-
-You should see blocks like the following in the log.
-
-```
-INFO [07-14|07:23:05] Imported new chain segment               blocks=1 txs=0 mgas=0.000 elapsed=431.085µs mgasps=0.000 number=163 hash=05e16c…a06228
-INFO [07-14|07:23:15] Imported new chain segment               blocks=1 txs=0 mgas=0.000 elapsed=461.465µs mgasps=0.000 number=164 hash=933b97…0c340c
-```
+> After you have completed the test on the local single node, you can configure 
+> the node to [connect to an existing CyberMiles network](http://travis.readthedocs.io/en/latest/connect-testnet.html), and sync to become
+> a full node on the blockchain. That allows your smart contracts to run on
+> all nodes of the blockchain.
 
 # Run the smart contract
 
-You can connect to the local CyberMiles node by attaching an instance of
-the Travis client.
+Next, from the attached web3-cmt console, you can delpoy the smart contract and receive an address for the deployment.
 
 ```
-# Get the IP address of the travis node
-$ docker inspect -f '{{ .NetworkSettings.IPAddress }}' travis
-172.17.0.2
+> owner = '0x1234...'
+> var bc = '60806040526004361061004157 ...'
+> var abi = [...]
 
-# Use the IP address from above to connect
-docker run --rm -it ywonline/travis:staging attach http://172.17.0.2:8545
+> var contract = web3.eth.contract(abi)
+> var contractInstance = contract.new(owner, {data : bc , from : owner})
+> contractInstance.address
+"0xabcdCONTRACTADDRESS"
 ```
 
-It opens the web3-cmt JavaScript console to interact with the virtual machine.
-The example below shows how to deploy the bytecode from `lityc` to the virtual machine as a smart contract.
+Then, you can call the libENI method on the deployed contract instance.
 
 ```
-Welcome to the Travis JavaScript console!
-
-instance: vm/v1.6.7-stable/linux-amd64/go1.9.3
-coinbase: 0x7eff122b94897ea5b0e2a9abf47b86337fafebdc
-at block: 231 (Sat, 14 Jul 2018 07:34:25 UTC)
- datadir: /travis
- modules: admin:1.0 cmt:1.0 eth:1.0 net:1.0 personal:1.0 rpc:1.0 web3:1.0
-
-> personal.unlockAccount('0x7eff122b94897ea5b0e2a9abf47b86337fafebdc', '1234')
-true
-> 
+> contractInstance.reverse("hello", {from: owner})
+olleh
 ```
 
-And finally, let's execute a method on the smart contract.
-
-
+That's it!

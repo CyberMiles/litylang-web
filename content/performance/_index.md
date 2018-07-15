@@ -1,46 +1,40 @@
 +++
-title = "The Project"
+title = "Performance"
 date = 2018-06-22T15:25:25+08:00
-weight = 3
+weight = 2
 chapter = true
-pre = "<b>3. </b>"
 disabletoc = false
 +++
 
-### Project
+### Performance
 
-# Contribution
+The Lity virtual machine supports heavy optimization for specific computing
+tasks by extending the virtual machine runtime using 
+C++ or other high performance native techniques.
+This approach is called Ethereum Native Interface (ENI): [libENI](http://libeni.readthedocs.io/en/latest/).
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Faucibus in ornare quam viverra orci sagittis eu volutpat odio. Nam aliquam sem et tortor consequat id porta nibh venenatis. Aliquet nec ullamcorper sit amet risus nullam eget. Ultricies integer quis auctor elit. Arcu non sodales neque sodales ut etiam sit. Et leo duis ut diam. Aenean euismod elementum nisi quis eleifend quam adipiscing vitae proin. Tortor condimentum lacinia quis vel. Quam lacus suspendisse faucibus interdum posuere lorem ipsum. Sit amet consectetur adipiscing elit pellentesque habitant morbi. Vulputate odio ut enim blandit volutpat maecenas volutpat blandit. Dictumst vestibulum rhoncus est pellentesque. Dignissim convallis aenean et tortor. Sed viverra tellus in hac habitasse platea dictumst. Feugiat nisl pretium fusce id velit ut.
+On the CyberMiles blockchain, we provide libENI functions optimized for
+common e-commerce scenarios, such as PKI-based encrytion to protect privacy.
+But as a general virtual machine technology, libENI can be utilized to
+optimize many different kinds of blockchain virtual machines.
 
-Velit egestas dui id ornare arcu odio. Suscipit adipiscing bibendum est ultricies. Mattis pellentesque id nibh tortor. Tellus at urna condimentum mattis. Blandit aliquam etiam erat velit scelerisque in dictum non. Magna fermentum iaculis eu non. Dui sapien eget mi proin sed libero enim. Quam viverra orci sagittis eu volutpat odio facilisis. Neque convallis a cras semper. Venenatis tellus in metus vulputate eu scelerisque felis imperdiet proin. Sollicitudin ac orci phasellus egestas. Odio ut sem nulla pharetra.
+> For instance, using Ethereum smart contract to verify header of 
+> a single bitcoin transaction (i.e., a scrypt operation) will cost 370M 
+> Ethereum gas, which is more than 1 Billion Gwei (1 ETH) at the gas price 
+> of 3 Gwei. And it has to be done across multiple 
+> Ethereum blocks to avoid exceeding the block gas limit.
+> In libENI, the entire scrypt operation can be completed with one function call.
+> It takes milli-seconds and consumes a few pennies of gas fees.
+> You can [learn more here]().
 
-At lectus urna duis convallis. Elementum integer enim neque volutpat ac tincidunt vitae semper quis. Tellus in metus vulputate eu scelerisque felis imperdiet. Phasellus egestas tellus rutrum tellus pellentesque. Scelerisque varius morbi enim nunc faucibus a pellentesque. Pellentesque nec nam aliquam sem et tortor consequat id porta. Viverra justo nec ultrices dui sapien. Sed sed risus pretium quam. Eu augue ut lectus arcu. Diam quam nulla porttitor massa id neque aliquam vestibulum morbi.
+# Use
 
-Non pulvinar neque laoreet suspendisse. Ornare suspendisse sed nisi lacus sed. Blandit massa enim nec dui nunc. Morbi blandit cursus risus at ultrices mi tempus. Sed enim ut sem viverra aliquet eget sit amet tellus. Adipiscing enim eu turpis egestas. Accumsan tortor posuere ac ut consequat semper viverra. Massa vitae tortor condimentum lacinia quis vel eros donec. Tristique risus nec feugiat in. Sit amet risus nullam eget. Vitae sapien pellentesque habitant morbi tristique senectus et netus et. Lacus suspendisse faucibus interdum posuere lorem ipsum dolor. Dictum fusce ut placerat orci nulla pellentesque. Mattis enim ut tellus elementum sagittis vitae et. Elementum eu facilisis sed odio morbi quis commodo odio. Quam adipiscing vitae proin sagittis nisl. Ultrices in iaculis nunc sed augue lacus viverra vitae. Felis eget nunc lobortis mattis aliquam faucibus purus in. Mattis pellentesque id nibh tortor id aliquet lectus.
+TBD
 
-Accumsan tortor posuere ac ut consequat semper viverra. Tellus cras adipiscing enim eu. Egestas diam in arcu cursus euismod quis viverra. Vitae turpis massa sed elementum tempus egestas sed sed. Nulla aliquet enim tortor at auctor urna. Quam adipiscing vitae proin sagittis nisl rhoncus mattis rhoncus. Et magnis dis parturient montes nascetur ridiculus. Eget duis at tellus at. Odio aenean sed adipiscing diam donec adipiscing tristique risus. Vulputate dignissim suspendisse in est ante in nibh mauris cursus. Lectus sit amet est placerat in egestas erat imperdiet sed. Integer eget aliquet nibh praesent tristique magna sit. Eget magna fermentum iaculis eu.
+# Develop
 
-# Developer Resources
+The [libENI developer guide](http://libeni.readthedocs.io/en/latest/developer-guide.html) discusses how to create new  
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Faucibus in ornare quam viverra orci sagittis eu volutpat odio. Nam aliquam sem et tortor consequat id porta nibh venenatis. Aliquet nec ullamcorper sit amet risus nullam eget. Ultricies integer quis auctor elit. Arcu non sodales neque sodales ut etiam sit. Et leo duis ut diam. Aenean euismod elementum nisi quis eleifend quam adipiscing vitae proin. Tortor condimentum lacinia quis vel. Quam lacus suspendisse faucibus interdum posuere lorem ipsum. Sit amet consectetur adipiscing elit pellentesque habitant morbi. Vulputate odio ut enim blandit volutpat maecenas volutpat blandit. Dictumst vestibulum rhoncus est pellentesque. Dignissim convallis aenean et tortor. Sed viverra tellus in hac habitasse platea dictumst. Feugiat nisl pretium fusce id velit ut.
+# Governance
 
-Velit egestas dui id ornare arcu odio. Suscipit adipiscing bibendum est ultricies. Mattis pellentesque id nibh tortor. Tellus at urna condimentum mattis. Blandit aliquam etiam erat velit scelerisque in dictum non. Magna fermentum iaculis eu non. Dui sapien eget mi proin sed libero enim. Quam viverra orci sagittis eu volutpat odio facilisis. Neque convallis a cras semper. Venenatis tellus in metus vulputate eu scelerisque felis imperdiet proin. Sollicitudin ac orci phasellus egestas. Odio ut sem nulla pharetra.
-
-At lectus urna duis convallis. Elementum integer enim neque volutpat ac tincidunt vitae semper quis. Tellus in metus vulputate eu scelerisque felis imperdiet. Phasellus egestas tellus rutrum tellus pellentesque. Scelerisque varius morbi enim nunc faucibus a pellentesque. Pellentesque nec nam aliquam sem et tortor consequat id porta. Viverra justo nec ultrices dui sapien. Sed sed risus pretium quam. Eu augue ut lectus arcu. Diam quam nulla porttitor massa id neque aliquam vestibulum morbi.
-
-Non pulvinar neque laoreet suspendisse. Ornare suspendisse sed nisi lacus sed. Blandit massa enim nec dui nunc. Morbi blandit cursus risus at ultrices mi tempus. Sed enim ut sem viverra aliquet eget sit amet tellus. Adipiscing enim eu turpis egestas. Accumsan tortor posuere ac ut consequat semper viverra. Massa vitae tortor condimentum lacinia quis vel eros donec. Tristique risus nec feugiat in. Sit amet risus nullam eget. Vitae sapien pellentesque habitant morbi tristique senectus et netus et. Lacus suspendisse faucibus interdum posuere lorem ipsum dolor. Dictum fusce ut placerat orci nulla pellentesque. Mattis enim ut tellus elementum sagittis vitae et. Elementum eu facilisis sed odio morbi quis commodo odio. Quam adipiscing vitae proin sagittis nisl. Ultrices in iaculis nunc sed augue lacus viverra vitae. Felis eget nunc lobortis mattis aliquam faucibus purus in. Mattis pellentesque id nibh tortor id aliquet lectus.
-
-Accumsan tortor posuere ac ut consequat semper viverra. Tellus cras adipiscing enim eu. Egestas diam in arcu cursus euismod quis viverra. Vitae turpis massa sed elementum tempus egestas sed sed. Nulla aliquet enim tortor at auctor urna. Quam adipiscing vitae proin sagittis nisl rhoncus mattis rhoncus. Et magnis dis parturient montes nascetur ridiculus. Eget duis at tellus at. Odio aenean sed adipiscing diam donec adipiscing tristique risus. Vulputate dignissim suspendisse in est ante in nibh mauris cursus. Lectus sit amet est placerat in egestas erat imperdiet sed. Integer eget aliquet nibh praesent tristique magna sit. Eget magna fermentum iaculis eu.
-
-# Version History
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Faucibus in ornare quam viverra orci sagittis eu volutpat odio. Nam aliquam sem et tortor consequat id porta nibh venenatis. Aliquet nec ullamcorper sit amet risus nullam eget. Ultricies integer quis auctor elit. Arcu non sodales neque sodales ut etiam sit. Et leo duis ut diam. Aenean euismod elementum nisi quis eleifend quam adipiscing vitae proin. Tortor condimentum lacinia quis vel. Quam lacus suspendisse faucibus interdum posuere lorem ipsum. Sit amet consectetur adipiscing elit pellentesque habitant morbi. Vulputate odio ut enim blandit volutpat maecenas volutpat blandit. Dictumst vestibulum rhoncus est pellentesque. Dignissim convallis aenean et tortor. Sed viverra tellus in hac habitasse platea dictumst. Feugiat nisl pretium fusce id velit ut.
-
-Velit egestas dui id ornare arcu odio. Suscipit adipiscing bibendum est ultricies. Mattis pellentesque id nibh tortor. Tellus at urna condimentum mattis. Blandit aliquam etiam erat velit scelerisque in dictum non. Magna fermentum iaculis eu non. Dui sapien eget mi proin sed libero enim. Quam viverra orci sagittis eu volutpat odio facilisis. Neque convallis a cras semper. Venenatis tellus in metus vulputate eu scelerisque felis imperdiet proin. Sollicitudin ac orci phasellus egestas. Odio ut sem nulla pharetra.
-
-At lectus urna duis convallis. Elementum integer enim neque volutpat ac tincidunt vitae semper quis. Tellus in metus vulputate eu scelerisque felis imperdiet. Phasellus egestas tellus rutrum tellus pellentesque. Scelerisque varius morbi enim nunc faucibus a pellentesque. Pellentesque nec nam aliquam sem et tortor consequat id porta. Viverra justo nec ultrices dui sapien. Sed sed risus pretium quam. Eu augue ut lectus arcu. Diam quam nulla porttitor massa id neque aliquam vestibulum morbi.
-
-Non pulvinar neque laoreet suspendisse. Ornare suspendisse sed nisi lacus sed. Blandit massa enim nec dui nunc. Morbi blandit cursus risus at ultrices mi tempus. Sed enim ut sem viverra aliquet eget sit amet tellus. Adipiscing enim eu turpis egestas. Accumsan tortor posuere ac ut consequat semper viverra. Massa vitae tortor condimentum lacinia quis vel eros donec. Tristique risus nec feugiat in. Sit amet risus nullam eget. Vitae sapien pellentesque habitant morbi tristique senectus et netus et. Lacus suspendisse faucibus interdum posuere lorem ipsum dolor. Dictum fusce ut placerat orci nulla pellentesque. Mattis enim ut tellus elementum sagittis vitae et. Elementum eu facilisis sed odio morbi quis commodo odio. Quam adipiscing vitae proin sagittis nisl. Ultrices in iaculis nunc sed augue lacus viverra vitae. Felis eget nunc lobortis mattis aliquam faucibus purus in. Mattis pellentesque id nibh tortor id aliquet lectus.
-
-Accumsan tortor posuere ac ut consequat semper viverra. Tellus cras adipiscing enim eu. Egestas diam in arcu cursus euismod quis viverra. Vitae turpis massa sed elementum tempus egestas sed sed. Nulla aliquet enim tortor at auctor urna. Quam adipiscing vitae proin sagittis nisl rhoncus mattis rhoncus. Et magnis dis parturient montes nascetur ridiculus. Eget duis at tellus at. Odio aenean sed adipiscing diam donec adipiscing tristique risus. Vulputate dignissim suspendisse in est ante in nibh mauris cursus. Lectus sit amet est placerat in egestas erat imperdiet sed. Integer eget aliquet nibh praesent tristique magna sit. Eget magna fermentum iaculis eu.
+TBD
