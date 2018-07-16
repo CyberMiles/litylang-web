@@ -1,113 +1,22 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Litylang</title>
-    <link>https://cybermiles.github.io/</link>
-    <description>Recent content on Litylang</description>
+    <title>Litylang on Documentation for litylang</title>
+    <link>http://www.litylang.org/</link>
+    <description>Recent content in Litylang on Documentation for litylang</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 22 Jun 2018 15:25:40 +0800</lastBuildDate>
     
-	<atom:link href="https://cybermiles.github.io/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://www.litylang.org/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>Requirements</title>
-      <link>https://cybermiles.github.io/documents/requirements/</link>
-      <pubDate>Fri, 22 Jun 2018 15:25:40 +0800</pubDate>
-      
-      <guid>https://cybermiles.github.io/documents/requirements/</guid>
-      <description>Chapter X Some Chapter title Lorem Ipsum.</description>
-    </item>
     
     <item>
-      <title>References</title>
-      <link>https://cybermiles.github.io/documents/references/</link>
-      <pubDate>Fri, 22 Jun 2018 15:25:40 +0800</pubDate>
+      <title>Credits</title>
+      <link>http://www.litylang.org/credits/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://cybermiles.github.io/documents/references/</guid>
-      <description>Chapter X Some Chapter title Lorem Ipsum.</description>
-    </item>
-    
-    <item>
-      <title>Talks</title>
-      <link>https://cybermiles.github.io/documents/talks/</link>
-      <pubDate>Fri, 22 Jun 2018 15:25:40 +0800</pubDate>
-      
-      <guid>https://cybermiles.github.io/documents/talks/</guid>
-      <description>Chapter X Some Chapter title Lorem Ipsum.</description>
-    </item>
-    
-    <item>
-      <title>Community Resources</title>
-      <link>https://cybermiles.github.io/help/community_resources/</link>
-      <pubDate>Fri, 22 Jun 2018 15:28:30 +0800</pubDate>
-      
-      <guid>https://cybermiles.github.io/help/community_resources/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Stay Informed</title>
-      <link>https://cybermiles.github.io/help/stay_informed/</link>
-      <pubDate>Fri, 22 Jun 2018 15:28:20 +0800</pubDate>
-      
-      <guid>https://cybermiles.github.io/help/stay_informed/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Get Help</title>
-      <link>https://cybermiles.github.io/help/get_help/</link>
-      <pubDate>Fri, 22 Jun 2018 15:28:07 +0800</pubDate>
-      
-      <guid>https://cybermiles.github.io/help/get_help/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Contribution</title>
-      <link>https://cybermiles.github.io/project/contribution/</link>
-      <pubDate>Fri, 22 Jun 2018 15:27:42 +0800</pubDate>
-      
-      <guid>https://cybermiles.github.io/project/contribution/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Developer Resources</title>
-      <link>https://cybermiles.github.io/project/developer_resources/</link>
-      <pubDate>Fri, 22 Jun 2018 15:27:29 +0800</pubDate>
-      
-      <guid>https://cybermiles.github.io/project/developer_resources/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Version History</title>
-      <link>https://cybermiles.github.io/project/version_history/</link>
-      <pubDate>Fri, 22 Jun 2018 15:27:20 +0800</pubDate>
-      
-      <guid>https://cybermiles.github.io/project/version_history/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Other</title>
-      <link>https://cybermiles.github.io/packages/other/</link>
-      <pubDate>Fri, 22 Jun 2018 15:26:36 +0800</pubDate>
-      
-      <guid>https://cybermiles.github.io/packages/other/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Standard</title>
-      <link>https://cybermiles.github.io/packages/standard/</link>
-      <pubDate>Fri, 22 Jun 2018 15:26:31 +0800</pubDate>
-      
-      <guid>https://cybermiles.github.io/packages/standard/</guid>
-      <description></description>
+      <guid>http://www.litylang.org/credits/</guid>
+      <description> Lity Contributors  for making Open Source Software a better place ! -- .ghContributors { display: flex; flex-flow: wrap; align-content: flex-start } .ghContributorsdiv { width: 50%; display: inline-flex; margin-bottom: 5px; } .ghContributorsdiv label { padding-left: 4px; } .ghContributorsdiv span { font-size: x-small; padding-left: 4px; } @media only all and (max-width: 47.938em) { .ghContributorsdiv { display: block; } }    @chriseth  3684 commits    @axic  1405 commits    @CJentzsch  561 commits    @gavofyork  539 commits    @LefterisJP  407 commits    @debris  358 commits    @LianaHus  292 commits    @pirapira  265 commits    @subtly  251 commits    @chfast  239 commits    @winsvega  209 commits    @Denton-L  194 commits    @bobsummerwill  93 commits    @VoR0220  86 commits    @gluk256  81 commits    @federicobond  74 commits    @ekpyron  70 commits    @guanqun  69 commits    @arkpar  63 commits    @NicolaiSoeborg  38 commits    @jamesray1  33 commits    @roadriverrail  27 commits    @leonardoalt  24 commits    @djudjuu  20 commits    @bit-shift  19 commits    @asinyagin  16 commits    @benjaminion  16 commits    @programmerTim  13 commits    @mocamircea  12 commits    @0yi0  12 commits    @ethers  12 commits    @azawlocki  11 commits    @aarlt  10 commits    @fulldecent  10 commits    @onepremise  10 commits    @limexp  9 commits    @yann300  9 commits    @hydai  9 commits    @rainbreak  9 commits    @zigguratt  8 commits    @wbt  8 commits    @Balajiganapathi  7 commits    @callendorph  7 commits    @redsquirrel  7 commits    @wanderer  7 commits    @kseo  6 commits    @sifmelcara  6 commits    @walter-weinmann  6 commits    @giact  6 commits    @msimovic  5 commits    @duaraghav8  5 commits    @elopio  5 commits    @LFsWang  4 commits    @rivenhk  4 commits    @bernardpeh  4 commits    @ali92hm  3 commits    @cjgdev  3 commits    @ameten  3 commits    @ruchevits  3 commits    @medvedev-evgeny  3 commits    @meowingtwurtle  3 commits    @ldct  3 commits    @mcoblenz  3 commits    @pjdelport  3 commits    @pipermerriam  3 commits    @raineorshine  3 commits    @ryepdx  3 commits    @q3k  3 commits    @wingyplus  3 commits    @ssonicblue  3 commits    @varunagarwal315  3 commits    @wadeAlexC  3 commits    @OTTTO  3 commits    @fabioberger  3 commits    @gcolvin  3 commits    @izgzhen  3 commits    @greggdourgarian  3 commits    @kylewu  3 commits    @aaroncolaco  2 commits    @abrahamsangha  2 commits    @4tXJ7f  2 commits    @arun1595  2 commits    @designium  2 commits    @chuacw  2 commits    @danielhams  2 commits    @davesque  2 commits    @ealmansi  2 commits    @CodeShark  2 commits    @Thrillberg  2 commits    @eepstein  2 commits    @tpwwu  2 commits    @hcaw  2 commits    @hongbinzuo  2 commits    @cholewa1992  2 commits    @mcdee  2 commits    @mesqueeb  2 commits    @chchmatt  2 commits    @morgansliman  2 commits    @nicksavers  2 commits    @natzei  2 commits   </description>
     </item>
     
   </channel>
