@@ -2,7 +2,7 @@
 title: "Litylang"
 ---
 
-### What is Lity
+# What is Lity
 
 Lity is a new programming language for building blockchain smart contracts. It consists of a *dynamically extensible language*, a *compiler*, and a *virtual machine* on the CyberMiles blockchain. It is a superset of the Solidity language and is more extensible, performant, and safe. Specifically,
 

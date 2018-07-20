@@ -6,7 +6,7 @@ chapter = true
 disabletoc = false
 +++
 
-### Business Rules
+# Business Rules
 
 According to the [CyberMiles whitepaper](https://www.cybermiles.io/wp-content/uploads/2018/03/Technical-Whitepaper_en-US.pdf), one of the key features of the CyberMiles
 platform is to incorporate a business rules engine directly into the 
