@@ -22,7 +22,7 @@
 }
 
 #TableOfContents > ul > li > a   {
-  font-weight: bold; padding: 0 18px; margin: 0 2px;
+  font-weight: bold; padding: 0 18px; margin: 16px 2px;;
 }
 
 #TableOfContents > ul > li > ul > li > a {
@@ -71,13 +71,13 @@ body {
 }
 
 #toc-menu {
-  border-right: thin solid #DAD8D8 !important;
+  /* border-right: thin solid #DAD8D8 !important; */
   padding-right: 1rem !important;
   margin-right: 0.5rem !important;
 }
 
 #sidebar-toggle-span {
-  border-right: thin solid #DAD8D8 !important;
+  /* border-right: thin solid #DAD8D8 !important; */
   padding-right: 0.5rem !important;
   margin-right: 1rem !important;
 }

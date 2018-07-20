@@ -256,7 +256,7 @@ textarea:focus, input[type="email"]:focus, input[type="number"]:focus, input[typ
 }
 #sidebar ul.topics ul {
     display: none;
-    padding-bottom: 1rem;
+    /* padding-bottom: 1rem; */
 }
 #sidebar ul.topics ul ul {
     padding-bottom: 0;
@@ -347,7 +347,7 @@ textarea:focus, input[type="email"]:focus, input[type="number"]:focus, input[typ
     border: 1px solid #ccc;
 }
 #body .padding {
-    padding: 3rem 6rem;
+    padding: 3rem 3rem;
 }
 @media only all and (max-width: 59.938em) {
     #body .padding {
@@ -436,8 +436,8 @@ textarea:focus, input[type="email"]:focus, input[type="number"]:focus, input[typ
     border-bottom: 4px solid #F0F2F4;
 }
 #chapter p {
-    text-align: center;
-    font-size: 1.2rem;
+    text-align: left;
+    font-size: 1rem;
 }
 #footer {
     padding: 3rem 1rem;
@@ -988,7 +988,7 @@ td {
 }
 #top-bar {
     background: #F6F6F6;
-    border-radius: 2px;
+    border-radius: 10px;
     padding: 0 1rem;
     height: 0;
     min-height: 3rem;
@@ -1056,11 +1056,17 @@ td {
         width: 70%;
         float: left;
     }
-    #top-bar {
-        background: #0D47A1;
-    }
     #sidebar-toggle .fa-bars {
-        color: white;
+        color: #0D47A1;
+    }
+    #index-header .fa-bars {
+        color: #0D47A1;
+    }
+    #index-header #index-logo {
+        margin: 0px;
+        width: 35px;
+        padding: 0px;
+        display: inline-block;
     }
     #mobile-logo {
         width: 30%;
@@ -1151,3 +1157,39 @@ pre .copy-to-clipboard:hover {
 }
 
 /*# sourceMappingURL=theme.css.map */
+
+
+/* Custom Footer */
+.custom-footer {
+    display: none;
+}
+
+@media only all and (max-width: 47.938em) {
+    .custom-footer {
+        display: block;
+        background: #322A38;
+        padding: 50px 20px;
+    }
+    
+    .custom-footer .copyright-text {
+        color: white;
+        font-size: 12px;
+        margin-top: 10px;
+    }
+}
+
+/* Sidebar TOC */
+#sidebar-toc #TableOfContents ul > li:first-child { 
+    display: none;
+}
+
+#index-header {
+    display: none;
+}
+
+@media only all and (max-width: 47.938em) {
+    #index-header {
+        display: block;
+    }
+}
+

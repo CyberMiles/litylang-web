@@ -3,112 +3,45 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://cybermiles.github.io/documents/requirements/</loc>
-    <lastmod>2018-06-22T15:25:40+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://cybermiles.github.io/documents/</loc>
+    <loc>http://www.litylang.org/documents/</loc>
     <lastmod>2018-06-22T15:00:50+08:00</lastmod>
   </url>
   
   <url>
-    <loc>https://cybermiles.github.io/documents/installation/</loc>
-    <lastmod>2018-06-22T15:25:40+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://cybermiles.github.io/packages/</loc>
+    <loc>http://www.litylang.org/packages/</loc>
     <lastmod>2018-06-22T15:25:11+08:00</lastmod>
   </url>
   
   <url>
-    <loc>https://cybermiles.github.io/documents/learn/</loc>
-    <lastmod>2018-06-22T15:25:40+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://cybermiles.github.io/project/</loc>
+    <loc>http://www.litylang.org/project/</loc>
     <lastmod>2018-06-22T15:25:25+08:00</lastmod>
   </url>
   
   <url>
-    <loc>https://cybermiles.github.io/documents/references/</loc>
-    <lastmod>2018-06-22T15:25:40+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://cybermiles.github.io/help/</loc>
+    <loc>http://www.litylang.org/help/</loc>
     <lastmod>2018-06-22T15:25:32+08:00</lastmod>
   </url>
   
   <url>
-    <loc>https://cybermiles.github.io/documents/articles/</loc>
+    <loc>http://www.litylang.org/blog/</loc>
     <lastmod>2018-06-22T15:25:40+08:00</lastmod>
   </url>
   
   <url>
-    <loc>https://cybermiles.github.io/blog/</loc>
-    <lastmod>2018-06-22T15:25:40+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://cybermiles.github.io/documents/talks/</loc>
-    <lastmod>2018-06-22T15:25:40+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://cybermiles.github.io/help/community_resources/</loc>
-    <lastmod>2018-06-22T15:28:30+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://cybermiles.github.io/help/stay_informed/</loc>
-    <lastmod>2018-06-22T15:28:20+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://cybermiles.github.io/help/get_help/</loc>
-    <lastmod>2018-06-22T15:28:07+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://cybermiles.github.io/project/contribution/</loc>
-    <lastmod>2018-06-22T15:27:42+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://cybermiles.github.io/project/developer_resources/</loc>
-    <lastmod>2018-06-22T15:27:29+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://cybermiles.github.io/project/version_history/</loc>
-    <lastmod>2018-06-22T15:27:20+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://cybermiles.github.io/packages/other/</loc>
-    <lastmod>2018-06-22T15:26:36+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://cybermiles.github.io/packages/standard/</loc>
-    <lastmod>2018-06-22T15:26:31+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://cybermiles.github.io/</loc>
-    <lastmod>2018-06-22T15:25:40+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://cybermiles.github.io/categories/</loc>
+    <loc>http://www.litylang.org/categories/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://cybermiles.github.io/tags/</loc>
+    <loc>http://www.litylang.org/credits/</loc>
+  </url>
+  
+  <url>
+    <loc>http://www.litylang.org/</loc>
+  </url>
+  
+  <url>
+    <loc>http://www.litylang.org/tags/</loc>
     <priority>0</priority>
   </url>
   
