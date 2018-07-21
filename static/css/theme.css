@@ -1180,7 +1180,11 @@ pre .copy-to-clipboard:hover {
 }
 
 /* Sidebar TOC */
-#sidebar-toc #TableOfContents ul > li:first-child { 
+/* #sidebar-toc #TableOfContents ul > li:first-child { 
+    display: none;
+} */
+
+#sidebar-toc #TableOfContents > ul > li > a {
     display: none;
 }
 
