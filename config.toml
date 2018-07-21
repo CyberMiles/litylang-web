@@ -17,7 +17,7 @@ url = "https://github.com/CyberMiles/lity"
 weight = 10
 
 [[Languages.en.menu.shortcuts]]
-name = "<i class='fa fa-fw fa-file-alt'></i> Lity docs"
+name = "<i class='fa fa-fw fa-file'></i> Lity docs"
 url = "http://lity.readthedocs.io/"
 weight = 11
 
@@ -27,7 +27,7 @@ url = "https://github.com/CyberMiles/libeni"
 weight = 12
 
 [[Languages.en.menu.shortcuts]]
-name = "<i class='fa fa-fw fa-file-alt'></i> libENI docs"
+name = "<i class='fa fa-fw fa-file'></i> libENI docs"
 url = "http://libeni.readthedocs.io/"
 weight = 13
 
@@ -37,7 +37,7 @@ url = "https://github.com/CyberMiles/travis"
 weight = 14
 
 [[Languages.en.menu.shortcuts]]
-name = "<i class='fa fa-fw fa-file-alt'></i> CyberMiles docs"
+name = "<i class='fa fa-fw fa-file'></i> CyberMiles docs"
 url = "http://travis.readthedocs.io/"
 weight = 15
 
