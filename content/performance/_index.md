@@ -6,7 +6,7 @@ chapter = true
 disabletoc = false
 +++
 
-### Performance
+# Performance
 
 The Lity virtual machine supports heavy optimization for specific computing
 tasks by extending the virtual machine runtime using 
@@ -27,7 +27,7 @@ optimize many different kinds of blockchain virtual machines.
 > It takes milli-seconds and consumes a few pennies of gas fees.
 > You can [learn more here](http://lity.readthedocs.io/en/latest/verify-dogecoin-block-on-travis.html).
 
-# Use
+### Use
 
 An increasing number of libENI functions are already integrated into the 
 Travis software and the CyberMiles blockchain network. To use them in your 
@@ -52,7 +52,7 @@ contract DogecoinVerifier {
 }
 ```
 
-# Develop
+### Develop
 
 To develop a new libENI function, you will need two things:
 
@@ -70,7 +70,7 @@ feature for blockchains where we cannot stop and restart to deploy new features.
 For more details, please refer to the
 [libENI developer guide](http://libeni.readthedocs.io/en/latest/developer-guide.html).
 
-# Governance
+### Governance
 
 While anyone can create a new libENI function, all public blockchains have 
 governance structures to determine which functions should be made available
