@@ -15,7 +15,7 @@ To get started, you will first need to download and install the Lity compiler. T
 To install Lity, [build from the source on GitHub](http://lity.readthedocs.io/en/latest/download.html).
 
 Alternatively, you could [download a binary release of Lity](https://github.com/CyberMiles/lity/releases) and extract the executable `lityc` into a local
-directory `~/lityc/. 
+directory `~/lityc/`. 
 
 ### A reverse Hello World
 
