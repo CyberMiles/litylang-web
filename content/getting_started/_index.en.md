@@ -6,11 +6,11 @@ chapter = true
 disabletoc = false
 +++
 
-### Getting Started
+# Getting Started
 
 To get started, you will first need to download and install the Lity compiler. Then, write and compile a Lity smart contract. From there you can start a CyberMiles node and execute the smart contract on the blockchain.
 
-# Download and install
+## Download and install
 
 Use the following link to [download the latest release of Lity](https://github.com/CyberMiles/lity/releases).
 Alternatively, you can [build from the source on GitHub](http://lity.readthedocs.io/en/latest/download.html).
