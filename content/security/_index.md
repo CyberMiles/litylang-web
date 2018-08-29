@@ -40,6 +40,6 @@ One of the most common security issues in Ethereum smart contracts is
 in smart contract code. Specifically, Lity takes a two-pronged approach to prevent integer overflow at both source code 
 and execution runtime levels.
 
-* Lity supports a new `safeuint` [data type for safe integers](https://lity.readthedocs.io/en/latest/safeuint.html#safeuint-type). All `safeuint` operations are automatically wrapped in SafeMath functions and hence are protected from overflows.
+* Lity supports a new `safeuint` [data type for safe integers](https://lity.readthedocs.io/en/latest/safeuint.html#safeuint-type). All `safeuint` operations are automatically wrapped in SafeMath functions and hence are protected from overflows. Because of that, `safeuint` is Lity's recommended data type to represent token or coin amounts.
 * The CyberMiles Virtual Machine [detects integer overflow at runtime](https://lity.readthedocs.io/en/latest/overflow-protection.html#lity-s-ethereum-virtual-machine), and stops the contract execution with an error, as opposed to continuing with the overflewn integer numbers.
 
