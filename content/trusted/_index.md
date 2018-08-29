@@ -1,7 +1,7 @@
 +++
-title = "Trusted Smart Contracts"
+title = "Oracles"
 date = 2018-06-22T15:00:50+08:00
-weight = 3
+weight = 4
 chapter = true
 disabletoc = false
 +++
@@ -16,4 +16,34 @@ A second approach for oracles is to create a community-based cryptoeconomic game
 
 In Lity, however, we take a different approach to create trusted smart contracts, and make oracles first class citizens on the CyberMiles blockchain. On the CyberMiles blockchain, the DPoS validators (super nodes) are trusted entities. They must stake a large amount of tokens from your own account and from their supporters / community. Those tokens are subject to slashing and confiscation if the validator misbehaves. So, if a smart contract can only be updated by current validators, data from this contract should have a high level of trust on the CyberMiles blockchain.
 
-In the Lity language, we provide a built-in function called `isValidator` to check whether the current transaction sender / function caller is a validator. Then with the `ValidatorOnly` modifier, we can construct smart contracts that act as trusted oracles on the blockchain. [See more here](https://lity.readthedocs.io/en/latest/validator-only-contract.html#validator-only-contract).
+In the Lity language, we provide a built-in function called `isValidator` to check whether the current transaction sender / function caller is a validator. 
+
+```
+// isValidator is a built-in function provided by Lity.
+// isValidator only takes one parameter, an address, to check this address is a validtor or not.
+isValidator(<address>) returns (bool returnValue);
+```
+
+Then with the `ValidatorOnly` modifier, we can construct smart contracts that act as trusted oracles on the blockchain. 
+
+```
+// pragma lity ^1.3.0;
+
+contract BTCRelay {
+  uint[] BTCHeaders;
+  modifier ValidatorOnly() {
+      require(isValidator(msg.sender));
+      _;
+  }
+
+  function saveBTCHeader(uint blockHash) ValidatorOnly {
+    BTCHeaders.append(headerHash);
+  }
+
+  function getBTCHeader(uint blockNum) pure public returns (uint) {
+    return BTCHeaders[blockNum];
+  }
+}
+```
+
+[See more here](https://lity.readthedocs.io/en/latest/validator-only-contract.html#validator-only-contract).
