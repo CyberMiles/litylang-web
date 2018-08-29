@@ -14,11 +14,13 @@ Lity is a new programming language for building blockchain smart contracts. It c
 
 * The upcoming [Lity Rules Engine](https://www.litylang.org/business_rules/) allows formal business rules to be embedded in smart contracts. That could drastically increase developer productivity and reduce errors.
 
-* The Lity language [prevents integer overflow errors](https://www.litylang.org/security/#overflow). It introduces a new number type called `safeuint`. It is an unsigned integer (`uint`) but all `safeuint` operations are automatically wrapped in SafetMath functions. Furthermore, the CyberMiles Virtual Machine (CVM) detects and stops integer overflows at runtime. The use of `safeuint` and CVM eliminates a large class of smart contract errors that resulted in significant fund loss in the past.
+* The Lity language [prevents integer overflow errors](https://www.litylang.org/security/#overflow-protection). It introduces a new number type called `safeuint`. It is an unsigned integer (`uint`) but all `safeuint` operations are automatically wrapped in SafetMath functions. Furthermore, the CyberMiles Virtual Machine (CVM) detects and stops integer overflows at runtime. The use of `safeuint` and CVM eliminates a large class of smart contract errors that resulted in significant fund loss in the past.
 
-* The Lity language supports [fixed point real numbers](https://www.litylang.org/number/), as opposed to integer-only in Solidity, and provides a real number algorithm library.
+* The Lity language supports [fixed point real numbers](https://www.litylang.org/number/), as opposed to integer-only arithmetics in Solidity.
 
-* The Lity compiler provides tooling for security and error checks before the Lity smart contract is deployed. The [ERC checker](https://www.litylang.org/security/#erc-checker) in the Lity compiler analyzes the source code and automatically checks if the contract conforms to known ERC standards. The compiler also integrates with the [Oyente static analyzer](https://www.litylang.org/security/#oyente) to detect common error patterns from the compiled bytecode.
+* Lity smart contracts [support alternative gas prices](https://www.litylang.org/gas/). For example, the system can give gas price discounts to certain types of contracts to promote certain use cases on the blockchain.
+
+* The Lity compiler provides tooling for security and error checks before the Lity smart contract is deployed. The [ERC checker](https://www.litylang.org/security/#erc-checker) in the Lity compiler analyzes the source code and automatically checks if the contract conforms to known ERC standards. The compiler also integrates with the [Oyente static analyzer](https://www.litylang.org/security/#static-analysis) to detect common error patterns from the compiled bytecode.
 
 Still interested? [Get started here!](https://www.litylang.org/getting_started/)
 
