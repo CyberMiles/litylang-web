@@ -1,7 +1,7 @@
 +++
-title = "Real Numbers"
+title = "Real Arithmetic"
 date = 2018-06-22T15:00:50+08:00
-weight = 3
+weight = 7
 chapter = true
 disabletoc = false
 +++
