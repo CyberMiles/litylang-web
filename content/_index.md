@@ -16,7 +16,9 @@ Lity is a new programming language for building blockchain smart contracts. It c
 
 * The Lity language introduces a [new number type](https://www.litylang.org/security/#safeuint) called `safeuint`. It is an unsigned integer (`uint`) but all `safeuint` operations are automatically wrapped in SafetMath functions. Because of that, `safeuint` is Lity's recommended data type to represent token or coin amounts. Furthermore, the CyberMiles Virtual Machine (CVM) [detects and stops](https://www.litylang.org/security/#overflow) integer overflows at runtime. The use of `safeuint` and CVM eliminates a large class of smart contract errors that resulted in significant fund loss in the past.
 
-* The Lity compiler provides tooling for security and error checks before the Lity smart contract is deployed. The [ERC checker](https://www.litylang.org/security/#erc-checker) in the Lity compiler analyzes the source code and automatically checks if the contract conforms to known ERC standards. The compiler also integrates with the Oyente static analyzer to detect common error patterns from the compiled bytecode.
+* The Lity language supports [fixed point real numbers](https://www.litylang.org/number/), as opposed to integer-only in Solidity, and provides a real number algorithm library.
+
+* The Lity compiler provides tooling for security and error checks before the Lity smart contract is deployed. The [ERC checker](https://www.litylang.org/security/#erc-checker) in the Lity compiler analyzes the source code and automatically checks if the contract conforms to known ERC standards. The compiler also integrates with the [Oyente static analyzer](https://www.litylang.org/security/#oyente) to detect common error patterns from the compiled bytecode.
 
 Still interested? [Get started here!](https://www.litylang.org/getting_started/)
 
