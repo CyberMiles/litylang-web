@@ -29,9 +29,9 @@
   font-weight: bold;
 }
 
-#TableOfContents > ul > li > ul > li > ul > li > ul > li > ul > li  {
+/* #TableOfContents > ul > li > ul > li > ul > li > ul > li > ul > li  {
     display: none;
-}
+} */
 
 body {
     font-size: 16px !important;

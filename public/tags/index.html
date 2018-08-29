@@ -9,20 +9,20 @@
 
     <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
 <link rel="icon" href="/images/favicon.png" type="image/x-icon" />
-    <title>Tags :: Documentation for litylang</title>
+    <title>Tags :: The Lity Language and Virtual Machine for Smart Contracts</title>
     
     
-    <link href="/css/nucleus.css?1531105557" rel="stylesheet">
-    <link href="/css/font-awesome.min.css?1531105557" rel="stylesheet">
-    <link href="/css/hybrid.css?1531105557" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1531105557" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1531105557" rel="stylesheet">
-    <link href="/css/auto-complete.css?1531105557" rel="stylesheet">
-    <link href="/css/theme.css?1531105557" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1531105557" rel="stylesheet">
+    <link href="/css/nucleus.css?1535524249" rel="stylesheet">
+    <link href="/css/font-awesome.min.css?1535524249" rel="stylesheet">
+    <link href="/css/hybrid.css?1535524249" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1535524249" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1535524249" rel="stylesheet">
+    <link href="/css/auto-complete.css?1535524249" rel="stylesheet">
+    <link href="/css/theme.css?1535524249" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1535524249" rel="stylesheet">
     
 
-    <script src="/js/jquery-2.x.min.js?1531105557"></script>
+    <script src="/js/jquery-2.x.min.js?1535524249"></script>
     
     <style type="text/css">
       :root #header + #content > #left > #rlblock_left{ 
@@ -51,14 +51,14 @@
     <span data-search-clear=""><i class="fa fa-close"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1531105557"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1531105557"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1535524249"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1535524249"></script>
 <script type="text/javascript">
     
         var baseurl = '\/';
     
 </script>
-<script type="text/javascript" src="/js/search.js?1531105557"></script>
+<script type="text/javascript" src="/js/search.js?1535524249"></script>
 
     
   </div>
@@ -73,31 +73,28 @@
  
   
     
-    <li data-nav-id="/documents/" title="Documents" class="dd-item 
+    <li data-nav-id="/getting_started/" title="Getting started" class="dd-item 
         
         
         
         ">
-      <a href="/documents/">
-          <b>1. </b>Documents
+      <a href="/getting_started/">
+          Getting started
           
       </a>
       <ul id="sidebar-toc">
           <nav id="TableOfContents">
 <ul>
-<li>
+<li><a href="#getting-started">Getting Started</a>
 <ul>
 <li>
 <ul>
-<li><a href="#documents">Documents</a></li>
+<li><a href="#download-and-install">Download and install</a></li>
+<li><a href="#a-reverse-hello-world">A reverse Hello World</a></li>
+<li><a href="#start-a-cybermiles-node">Start a CyberMiles node</a></li>
+<li><a href="#run-the-smart-contract">Run the smart contract</a></li>
 </ul></li>
 </ul></li>
-<li><a href="#requirements">Requirements</a></li>
-<li><a href="#installation">Installation</a></li>
-<li><a href="#learn">Learn</a></li>
-<li><a href="#references">References</a></li>
-<li><a href="#articles">Articles</a></li>
-<li><a href="#talks">Talks</a></li>
 </ul>
 </nav>
       </ul>
@@ -114,27 +111,27 @@
  
   
     
-    <li data-nav-id="/packages/" title="Packages" class="dd-item 
+    <li data-nav-id="/performance/" title="Performance" class="dd-item 
         
         
         
         ">
-      <a href="/packages/">
-          <b>2. </b>Packages
+      <a href="/performance/">
+          Performance
           
       </a>
       <ul id="sidebar-toc">
           <nav id="TableOfContents">
 <ul>
-<li>
+<li><a href="#performance">Performance</a>
 <ul>
 <li>
 <ul>
-<li><a href="#packages">Packages</a></li>
+<li><a href="#use">Use</a></li>
+<li><a href="#develop">Develop</a></li>
+<li><a href="#governance">Governance</a></li>
 </ul></li>
 </ul></li>
-<li><a href="#standard">Standard</a></li>
-<li><a href="#others">Others</a></li>
 </ul>
 </nav>
       </ul>
@@ -151,28 +148,26 @@
  
   
     
-    <li data-nav-id="/project/" title="The Project" class="dd-item 
+    <li data-nav-id="/security/" title="Security" class="dd-item 
         
         
         
         ">
-      <a href="/project/">
-          <b>3. </b>The Project
+      <a href="/security/">
+          Security
           
       </a>
       <ul id="sidebar-toc">
           <nav id="TableOfContents">
 <ul>
-<li>
+<li><a href="#security">Security</a>
 <ul>
 <li>
 <ul>
-<li><a href="#project">Project</a></li>
+<li><a href="#erc-checker">ERC checker</a></li>
+<li><a href="#overflow-protection">Overflow protection</a></li>
 </ul></li>
 </ul></li>
-<li><a href="#contribution">Contribution</a></li>
-<li><a href="#developer-resources">Developer Resources</a></li>
-<li><a href="#version-history">Version History</a></li>
 </ul>
 </nav>
       </ul>
@@ -189,28 +184,19 @@
  
   
     
-    <li data-nav-id="/help/" title="Help" class="dd-item 
+    <li data-nav-id="/business_rules/" title="Business Rules" class="dd-item 
         
         
         
         ">
-      <a href="/help/">
-          <b>4. </b>Help
+      <a href="/business_rules/">
+          Business Rules
           
       </a>
       <ul id="sidebar-toc">
           <nav id="TableOfContents">
 <ul>
-<li>
-<ul>
-<li>
-<ul>
-<li><a href="#help">Help</a></li>
-</ul></li>
-</ul></li>
-<li><a href="#get-help">Get Help</a></li>
-<li><a href="#community-resources">Community Resources</a></li>
-<li><a href="#stay-informed">Stay Informed</a></li>
+<li><a href="#business-rules">Business Rules</a></li>
 </ul>
 </nav>
       </ul>
@@ -227,26 +213,26 @@
  
   
     
-    <li data-nav-id="/blog/" title="Blog" class="dd-item 
+    <li data-nav-id="/scheduler/" title="Scheduler" class="dd-item 
         
         
         
         ">
-      <a href="/blog/">
-          <b>5. </b>Blog
+      <a href="/scheduler/">
+          Scheduler
           
       </a>
       <ul id="sidebar-toc">
           <nav id="TableOfContents">
 <ul>
-<li>
+<li><a href="#scheduler">Scheduler</a>
 <ul>
 <li>
 <ul>
-<li><a href="#blog">Blog</a></li>
+<li><a href="#challenge">Challenge</a></li>
+<li><a href="#cybermiles-support">CyberMiles support</a></li>
 </ul></li>
 </ul></li>
-<li><a href="#day-1">Day 1</a></li>
 </ul>
 </nav>
       </ul>
@@ -266,11 +252,27 @@
         <ul>
           
               <li> 
-                  <a class="padding" href="https://github.com/CyberMiles/lity" target="_blank"><i class='fa fa-fw fa-github'></i> Github repo</a>
+                  <a class="padding" href="https://github.com/CyberMiles/lity" target="_blank"><i class='fa fa-fw fa-github'></i> Lity source</a>
               </li>
           
               <li> 
-                  <a class="padding" href="http://www.litylang.org/credits" target="_blank"><i class='fa fa-fw fa-bullhorn'></i> Credits</a>
+                  <a class="padding" href="http://lity.readthedocs.io/" target="_blank"><i class='fa fa-fw fa-file'></i> Lity docs</a>
+              </li>
+          
+              <li> 
+                  <a class="padding" href="https://github.com/CyberMiles/libeni" target="_blank"><i class='fa fa-fw fa-github'></i> libENI source</a>
+              </li>
+          
+              <li> 
+                  <a class="padding" href="http://libeni.readthedocs.io/" target="_blank"><i class='fa fa-fw fa-file'></i> libENI docs</a>
+              </li>
+          
+              <li> 
+                  <a class="padding" href="https://github.com/CyberMiles/travis" target="_blank"><i class='fa fa-fw fa-github'></i> CyberMiles source</a>
+              </li>
+          
+              <li> 
+                  <a class="padding" href="http://travis.readthedocs.io/" target="_blank"><i class='fa fa-fw fa-file'></i> CyberMiles docs</a>
               </li>
           
         </ul>
@@ -368,20 +370,20 @@
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1531105557"></script>
-    <script src="/js/perfect-scrollbar.min.js?1531105557"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1531105557"></script>
-    <script src="/js/jquery.sticky.js?1531105557"></script>
-    <script src="/js/featherlight.min.js?1531105557"></script>
-    <script src="/js/html5shiv-printshiv.min.js?1531105557"></script>
-    <script src="/js/highlight.pack.js?1531105557"></script>
+    <script src="/js/clipboard.min.js?1535524249"></script>
+    <script src="/js/perfect-scrollbar.min.js?1535524249"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1535524249"></script>
+    <script src="/js/jquery.sticky.js?1535524249"></script>
+    <script src="/js/featherlight.min.js?1535524249"></script>
+    <script src="/js/html5shiv-printshiv.min.js?1535524249"></script>
+    <script src="/js/highlight.pack.js?1535524249"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom.71422.js?1531105557"></script>
-    <script src="/js/learn.js?1531105557"></script>
-    <script src="/js/hugo-learn.js?1531105557"></script>
+    <script src="/js/modernizr.custom.71422.js?1535524249"></script>
+    <script src="/js/learn.js?1535524249"></script>
+    <script src="/js/hugo-learn.js?1535524249"></script>
 
-    <link href="/mermaid/mermaid.css?1531105557" type="text/css" rel="stylesheet" />
-    <script src="/mermaid/mermaid.js?1531105557"></script>
+    <link href="/mermaid/mermaid.css?1535524249" type="text/css" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js?1535524249"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>

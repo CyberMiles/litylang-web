@@ -314,7 +314,7 @@ textarea:focus, input[type="email"]:focus, input[type="number"]:focus, input[typ
     display: inline;
 }
 #sidebar ul li li {
-    padding-left: 1rem;
+    /* padding-left: 1rem; */
     text-indent: 0.2rem;
 }
 #main {
@@ -416,7 +416,7 @@ textarea:focus, input[type="email"]:focus, input[type="number"]:focus, input[typ
     margin-bottom: 5rem;
 }
 #chapter {
-    display: flex;
+    display: block;
     align-items: center;
     justify-content: center;
     height: 100%;
@@ -425,6 +425,7 @@ textarea:focus, input[type="email"]:focus, input[type="number"]:focus, input[typ
 #chapter #body-inner {
     padding-bottom: 3rem;
     max-width: 80%;
+    margin: 0 auto;
 }
 #chapter h3 {
     font-family: "Work Sans", "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
@@ -1179,7 +1180,11 @@ pre .copy-to-clipboard:hover {
 }
 
 /* Sidebar TOC */
-#sidebar-toc #TableOfContents ul > li:first-child { 
+/* #sidebar-toc #TableOfContents ul > li:first-child { 
+    display: none;
+} */
+
+#sidebar-toc #TableOfContents > ul > li > a {
     display: none;
 }
 

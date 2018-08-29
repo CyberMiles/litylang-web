@@ -19,6 +19,8 @@ directory `~/lityc/`.
 
 ### A reverse Hello World
 
+{{< youtube 9ueVstWTr8Q >}}
+
 The code below shows a simple Lity contract with a libENI call. 
 The single libENI call costs hundreds of millions Ethereum gas to run when implemented in Solidity -- it showcases the capability of Lity and libENI.
 While all Solidity smart contracts work on Lity, this example uses Lity-specific features and will not run on Solidity / Ethereum. 
@@ -57,6 +59,8 @@ Contract JSON ABI
 ```
 
 ### Start a CyberMiles node
+
+{{< youtube --FagDzgc-0 >}}
 
 The Lity software we downloaded includes the `lityc` compiler and development tools.
 But in order to run the smart contract, we also need the Lity virtual machine

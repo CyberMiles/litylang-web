@@ -19,8 +19,9 @@ occur in the first place on the CyberMiles blockchain.
 
 ### ERC checker
 
-The ERC checker is a Lity compiler facility to make sure that smart contracts
-correctly complies to the ERC standards they claim to implement.
+The ERC checker is a Lity compiler facility to make sure that smart contract source code
+correctly complies to the ERC standards they claim to implement. This analysis is done at the
+source code level by the compiler.
 
 * [ERC20](https://theethereum.wiki/w/index.php/ERC20_Token_Standard) is the most common token / coin issuance contract standard. [See ERC20 checker in action](http://lity.readthedocs.io/en/latest/erc-contract-standard-checker/erc20-checker.html#erc20-contract-standard-checker).
 * [ERC223](https://github.com/ethereum/EIPs/issues/223) is an enhancement to ERC20. It guards against inadvertent fund transfers to contract addresses, which is a common source of fund loss on Ethereum. We recommend that all ERC20 contracts on CyberMiles conform to the ERC223 standard for better safety. [See ERC223 checker in action](http://lity.readthedocs.io/en/latest/erc-contract-standard-checker/erc223-checker.html#erc223-contract-standard-checker).
@@ -28,13 +29,17 @@ correctly complies to the ERC standards they claim to implement.
 * [ERC827](https://github.com/ethereum/EIPs/issues/827) is another enhancement to make ERC20 easier and safer to use while maintaining compatibility with ERC20 tools. [See ERC827 checker in action](http://lity.readthedocs.io/en/latest/erc-contract-standard-checker/erc827-checker.html#erc827-contract-standard-checker).
 * [ERC884](https://github.com/ethereum/EIPs/blob/master/EIPS/eip-884.md) is a security token standard to issue stick certificates. [See ERC884 checker in action](http://lity.readthedocs.io/en/latest/erc-contract-standard-checker/erc884-checker.html#erc884-contract-standard-checker).
 
+### Integrated Oyente static analysis
+
+After the Lity compiler generates the bytecode for the smart contract, it automatically [runs the Oyente static analysis tool](https://lity.readthedocs.io/en/latest/oyente-integration.html) to check for common security issues, such as call stack bugs, reentrancy issues, time dependency, and concurrency bugs. [Oyente](https://github.com/melonproject/oyente) has a library of rules, which is frequently updated to check for new security issues.
+
 ### Overflow protection
 
 One of the most common security issues in Ethereum smart contracts is 
 [integer overflow](https://medium.com/cybermiles/building-a-safer-crypto-token-27c96a7e78fd). Lity proactively eliminates the opportunities for integer overflow
-in smart contract code. Specifically,
+in smart contract code. Specifically, Lity takes a two-pronged approach to prevent integer overflow at both source code 
+and execution runtime levels.
 
-* The Lity compiler checks for the use of SafeMath on integers. It throws warnings if integer operations are not wrapped around in SafetMath.
-* The CyberMiles Virtual Machine detects integer overflow at runtime, and stops the contract execution with an error, as opposed to continuing with the
-overflen integer numbers.
+* Lity supports a new `safeuint` [data type for safe integers](https://lity.readthedocs.io/en/latest/safeuint.html#safeuint-type). All `safeuint` operations are automatically wrapped in SafeMath functions and hence are protected from overflows. Because of that, `safeuint` is Lity's recommended data type to represent token or coin amounts.
+* The CyberMiles Virtual Machine [detects integer overflow at runtime](https://lity.readthedocs.io/en/latest/overflow-protection.html#lity-s-ethereum-virtual-machine), and stops the contract execution with an error, as opposed to continuing with the overflewn integer numbers.
 
