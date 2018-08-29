@@ -14,7 +14,7 @@ Lity is a new programming language for building blockchain smart contracts. It c
 
 * The upcoming [Lity Rules Engine](https://www.litylang.org/business_rules/) allows formal business rules to be embedded in smart contracts. That could drastically increase developer productivity and reduce errors.
 
-* The Lity language introduces a [new number type](https://www.litylang.org/security/#safeuint) called `safeuint`. It is an unsigned integer (`uint`) but all `safeuint` operations are automatically wrapped in SafetMath functions. Because of that, `safeuint` is Lity's recommended data type to represent token or coin amounts. Furthermore, the CyberMiles Virtual Machine (CVM) [detects and stops](https://www.litylang.org/security/#overflow) integer overflows at runtime. The use of `safeuint` and CVM eliminates a large class of smart contract errors that resulted in significant fund loss in the past.
+* The Lity language [prevents integer overflow errors](https://www.litylang.org/security/#overflow). It introduces a new number type called `safeuint`. It is an unsigned integer (`uint`) but all `safeuint` operations are automatically wrapped in SafetMath functions. Furthermore, the CyberMiles Virtual Machine (CVM) detects and stops integer overflows at runtime. The use of `safeuint` and CVM eliminates a large class of smart contract errors that resulted in significant fund loss in the past.
 
 * The Lity language supports [fixed point real numbers](https://www.litylang.org/number/), as opposed to integer-only in Solidity, and provides a real number algorithm library.
 
