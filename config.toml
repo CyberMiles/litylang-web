@@ -6,6 +6,10 @@ showVisitedLinks = false
 enableRobotsTXT = true
 googleAnalytics = "UA-120065893-5"
 
+[params]
+  description = "Lity is a new programming language for building blockchain smart contracts."
+  image = "images/lity@3x-pad.jpg"
+
 [Languages]
 [Languages.en]
 title = "The Lity Language and Virtual Machine for Smart Contracts"

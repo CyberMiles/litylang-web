@@ -5,21 +5,6 @@
   <url>
     <loc>http://www.litylang.org/getting_started/</loc>
     <lastmod>2018-06-22T15:00:50+08:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="http://www.litylang.org/getting_started/"
-                />
-  </url>
-  
-  <url>
-    <loc>http://www.litylang.org/getting_started/</loc>
-    <lastmod>2018-06-22T15:00:50+08:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="http://www.litylang.org/getting_started/"
-                />
   </url>
   
   <url>
@@ -28,7 +13,17 @@
   </url>
   
   <url>
+    <loc>http://www.litylang.org/number/</loc>
+    <lastmod>2018-06-22T15:00:50+08:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://www.litylang.org/security/</loc>
+    <lastmod>2018-06-22T15:00:50+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.litylang.org/trusted/</loc>
     <lastmod>2018-06-22T15:00:50+08:00</lastmod>
   </url>
   

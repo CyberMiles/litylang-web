@@ -3,26 +3,46 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-    <meta name="generator" content="Hugo 0.42.2" />
-    <meta name="description" content="">
+    <meta name="generator" content="Hugo 0.48" />
+    <meta name="description" content="Lity is a new programming language for building blockchain smart contracts.">
 
 
     <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
 <link rel="icon" href="/images/favicon.png" type="image/x-icon" />
     <title>Litylang :: The Lity Language and Virtual Machine for Smart Contracts</title>
+
+    
+    <meta property="og:title" content="Litylang" />
+    <meta property="og:description" content="Lity is a new programming language for building blockchain smart contracts." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="http://www.litylang.org/" />
+    <meta property="og:image" content="http://www.litylang.orgimages/lity@3x-pad.jpg" />
+
+    
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-120065893-5', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
     
     
-    <link href="/css/nucleus.css?1535524249" rel="stylesheet">
-    <link href="/css/font-awesome.min.css?1535524249" rel="stylesheet">
-    <link href="/css/hybrid.css?1535524249" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1535524249" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1535524249" rel="stylesheet">
-    <link href="/css/auto-complete.css?1535524249" rel="stylesheet">
-    <link href="/css/theme.css?1535524249" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1535524249" rel="stylesheet">
+    <link href="/css/nucleus.css?1546411586" rel="stylesheet">
+    <link href="/css/font-awesome.min.css?1546411586" rel="stylesheet">
+    <link href="/css/hybrid.css?1546411586" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1546411586" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1546411586" rel="stylesheet">
+    <link href="/css/auto-complete.css?1546411586" rel="stylesheet">
+    <link href="/css/theme.css?1546411586" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1546411586" rel="stylesheet">
     
 
-    <script src="/js/jquery-2.x.min.js?1535524249"></script>
+    <script src="/js/jquery-2.x.min.js?1546411586"></script>
     
     <style type="text/css">
       :root #header + #content > #left > #rlblock_left{ 
@@ -51,14 +71,14 @@
     <span data-search-clear=""><i class="fa fa-close"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1535524249"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1535524249"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1546411586"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1546411586"></script>
 <script type="text/javascript">
     
         var baseurl = '\/';
     
 </script>
-<script type="text/javascript" src="/js/search.js?1535524249"></script>
+<script type="text/javascript" src="/js/search.js?1546411586"></script>
 
     
   </div>
@@ -148,6 +168,35 @@
  
   
     
+    <li data-nav-id="/number/" title="Real Numbers" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/number/">
+          Real Numbers
+          
+      </a>
+      <ul id="sidebar-toc">
+          <nav id="TableOfContents">
+<ul>
+<li><a href="#real-number-support">Real Number Support</a></li>
+</ul>
+</nav>
+      </ul>
+      
+              
+    </li>
+  
+ 
+
+                
+                
+
+
+ 
+  
+    
     <li data-nav-id="/security/" title="Security" class="dd-item 
         
         
@@ -165,9 +214,39 @@
 <li>
 <ul>
 <li><a href="#erc-checker">ERC checker</a></li>
+<li><a href="#integrated-oyente-static-analysis">Integrated Oyente static analysis</a></li>
 <li><a href="#overflow-protection">Overflow protection</a></li>
 </ul></li>
 </ul></li>
+</ul>
+</nav>
+      </ul>
+      
+              
+    </li>
+  
+ 
+
+                
+                
+
+
+ 
+  
+    
+    <li data-nav-id="/trusted/" title="Trusted Smart Contracts" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/trusted/">
+          Trusted Smart Contracts
+          
+      </a>
+      <ul id="sidebar-toc">
+          <nav id="TableOfContents">
+<ul>
+<li><a href="#trusted-smart-contracts">Trusted Smart Contracts</a></li>
 </ul>
 </nav>
       </ul>
@@ -331,13 +410,19 @@
 <p>Lity is a new programming language for building blockchain smart contracts. It consists of a <em>dynamically extensible language</em>, a <em>compiler</em>, and a <em>virtual machine</em> on the CyberMiles blockchain. It is a superset of the Solidity language and is more extensible, performant, and safe. Specifically,</p>
 
 <ul>
-<li><p>The libENI dynamic VM extension allows native functions to be added to the virtual machine on the fly, without stopping, forking or upgrading the blockchain.</p></li>
+<li><p>The <a href="https://www.litylang.org/performance/">libENI</a> dynamic VM extension allows native functions to be added to the virtual machine on the fly, without stopping, forking or upgrading the blockchain.</p></li>
 
-<li><p>The ERC checker not only checks but also automagically fixes common security bugs in smart contracts.</p></li>
+<li><p>Lity language&rsquo;s built-in function <code>schedule</code> allows smart contracts to <a href="https://www.litylang.org/scheduler/">schedule timer tasks</a> to be executed in the future, which is required by many real-world business contracts such as trust, will, installment payments, insurance, stock options, and investment returns.</p></li>
 
-<li><p>The new keyword <code>schedule</code> allows smart contracts to schedule timer tasks to be executed in the future, which is required by many real-world business contracts such as trust, will, installment payments, insurance, stock options, and investment returns.</p></li>
+<li><p>Lity language&rsquo;s built-in function <code>isValidator</code> allows smart contracts to check whether the transaction sender is a current validator of the CyberMiles blockchain. Through the <code>ValidatorOnly</code> modifier, we can create <a href="https://www.litylang.org/trusted/">&ldquo;trusted&rdquo; smart contracts</a> that can only be updated by validators on the CyberMiles blockchain. A common use case of such trusted smart contracts is for them to serve as oracles to provide off-chain and cross-chain states.</p></li>
 
-<li><p>The upcoming Lity Rules Engine allows formal business rules to be embedded in smart contracts. That could drastically increase developer productivity and reduce errors.</p></li>
+<li><p>The upcoming <a href="https://www.litylang.org/business_rules/">Lity Rules Engine</a> allows formal business rules to be embedded in smart contracts. That could drastically increase developer productivity and reduce errors.</p></li>
+
+<li><p>The Lity language <a href="https://www.litylang.org/security/#overflow">prevents integer overflow errors</a>. It introduces a new number type called <code>safeuint</code>. It is an unsigned integer (<code>uint</code>) but all <code>safeuint</code> operations are automatically wrapped in SafetMath functions. Furthermore, the CyberMiles Virtual Machine (CVM) detects and stops integer overflows at runtime. The use of <code>safeuint</code> and CVM eliminates a large class of smart contract errors that resulted in significant fund loss in the past.</p></li>
+
+<li><p>The Lity language supports <a href="https://www.litylang.org/number/">fixed point real numbers</a>, as opposed to integer-only in Solidity, and provides a real number algorithm library.</p></li>
+
+<li><p>The Lity compiler provides tooling for security and error checks before the Lity smart contract is deployed. The <a href="https://www.litylang.org/security/#erc-checker">ERC checker</a> in the Lity compiler analyzes the source code and automatically checks if the contract conforms to known ERC standards. The compiler also integrates with the <a href="https://www.litylang.org/security/#oyente">Oyente static analyzer</a> to detect common error patterns from the compiled bytecode.</p></li>
 </ul>
 
 <p>Still interested? <a href="https://www.litylang.org/getting_started/">Get started here!</a></p>
@@ -356,20 +441,20 @@
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1535524249"></script>
-    <script src="/js/perfect-scrollbar.min.js?1535524249"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1535524249"></script>
-    <script src="/js/jquery.sticky.js?1535524249"></script>
-    <script src="/js/featherlight.min.js?1535524249"></script>
-    <script src="/js/html5shiv-printshiv.min.js?1535524249"></script>
-    <script src="/js/highlight.pack.js?1535524249"></script>
+    <script src="/js/clipboard.min.js?1546411586"></script>
+    <script src="/js/perfect-scrollbar.min.js?1546411586"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1546411586"></script>
+    <script src="/js/jquery.sticky.js?1546411586"></script>
+    <script src="/js/featherlight.min.js?1546411586"></script>
+    <script src="/js/html5shiv-printshiv.min.js?1546411586"></script>
+    <script src="/js/highlight.pack.js?1546411586"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom.71422.js?1535524249"></script>
-    <script src="/js/learn.js?1535524249"></script>
-    <script src="/js/hugo-learn.js?1535524249"></script>
+    <script src="/js/modernizr.custom.71422.js?1546411586"></script>
+    <script src="/js/learn.js?1546411586"></script>
+    <script src="/js/hugo-learn.js?1546411586"></script>
 
-    <link href="/mermaid/mermaid.css?1535524249" type="text/css" rel="stylesheet" />
-    <script src="/mermaid/mermaid.js?1535524249"></script>
+    <link href="/mermaid/mermaid.css?1546411586" type="text/css" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js?1546411586"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>
