@@ -1,7 +1,7 @@
 +++
 title = "Business Rules"
 date = 2018-06-22T15:25:11+08:00
-weight = 4
+weight = 6
 chapter = true
 disabletoc = false
 +++

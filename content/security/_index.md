@@ -29,7 +29,7 @@ source code level by the compiler.
 * [ERC827](https://github.com/ethereum/EIPs/issues/827) is another enhancement to make ERC20 easier and safer to use while maintaining compatibility with ERC20 tools. [See ERC827 checker in action](http://lity.readthedocs.io/en/latest/erc-contract-standard-checker/erc827-checker.html#erc827-contract-standard-checker).
 * [ERC884](https://github.com/ethereum/EIPs/blob/master/EIPS/eip-884.md) is a security token standard to issue stick certificates. [See ERC884 checker in action](http://lity.readthedocs.io/en/latest/erc-contract-standard-checker/erc884-checker.html#erc884-contract-standard-checker).
 
-### Integrated Oyente static analysis
+### Static analysis
 
 After the Lity compiler generates the bytecode for the smart contract, it automatically [runs the Oyente static analysis tool](https://lity.readthedocs.io/en/latest/oyente-integration.html) to check for common security issues, such as call stack bugs, reentrancy issues, time dependency, and concurrency bugs. [Oyente](https://github.com/melonproject/oyente) has a library of rules, which is frequently updated to check for new security issues.
 
