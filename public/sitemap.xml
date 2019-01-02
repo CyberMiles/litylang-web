@@ -13,11 +13,6 @@
   </url>
   
   <url>
-    <loc>http://www.litylang.org/number/</loc>
-    <lastmod>2018-06-22T15:00:50+08:00</lastmod>
-  </url>
-  
-  <url>
     <loc>http://www.litylang.org/security/</loc>
     <lastmod>2018-06-22T15:00:50+08:00</lastmod>
   </url>
@@ -28,13 +23,23 @@
   </url>
   
   <url>
+    <loc>http://www.litylang.org/scheduler/</loc>
+    <lastmod>2018-06-22T15:25:32+08:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://www.litylang.org/business_rules/</loc>
     <lastmod>2018-06-22T15:25:11+08:00</lastmod>
   </url>
   
   <url>
-    <loc>http://www.litylang.org/scheduler/</loc>
-    <lastmod>2018-06-22T15:25:32+08:00</lastmod>
+    <loc>http://www.litylang.org/number/</loc>
+    <lastmod>2018-06-22T15:00:50+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.litylang.org/gas/</loc>
+    <lastmod>2018-06-22T15:00:50+08:00</lastmod>
   </url>
   
   <url>
