@@ -1,25 +1,46 @@
 +++
-title = "Gas Discounts"
+title = "Free Gas"
 date = 2018-06-22T15:00:50+08:00
 weight = 8
 chapter = true
 disabletoc = false
 +++
 
-# Gas Discounts
+# "Free" Gas
 
-One of the major issues with public blockchains is the "one size fits all" pricing scheme for transaction costs (gas fees).
-It makes the blockchain service too expensive for many use cases, since the gas price is determined by the use cases
-that are willing to pay the most.
+One of the major hurdles of blockchain application adoption is that end users are asked to pay a `gas` fee in order to perform certain functions on the blockchain. The gas mechanism is crucial for the blockchain's security, as it prevents DoS attackers from overwhelming the blockchain nodes with computationally intensive requests. However, the gas requirement also means that new end users must be taught to purchase cryptocurrencies and manage private keys before they can even start to use decentralized applications.
 
-Application specific blockchains, such as the CyberMiles blockchain for e-commerce applications, can alleviate this problem.
-Yet still, within the e-commerce space, financial applications are probably much less sensitive to infrastructure costs than
-dispute resolution applications.
+Lity provides an alternative approach to onboard new users to blockchain applications. Through the `freegas` keyword, the smart contract owner can designate that some or all functions in a contract should be paid by the owner herself. When the user calls those functions, she would not need to send a gas fee with the transaction. Instead, the appropriate gas fee would be deducted from the contract owner's account.
 
-To resolve this problem, the blockchain should provide a governance strategy to set different gas prices for 
-different smart contracts. On CyberMiles, the [governance transactions](https://travis.readthedocs.io/en/latest/governance.html) 
-allow smart contract creators to apply for discounted gas
-prices, and the discounts could be approved by a vote by CyberMiles validators. Once approved, the CyberMiles Virtual
-Machine will apply the discount to gas computations for the contract. That allows validators to promote certain
-types of applications on the CyberMiles blockchain and forester a healthy ecosystem.
+Below is an example. On the CyberMiles blockchain, the `test` function can be called without gas by the end user. That is to set `gas = 0` or `gasPrice = 0` in the transaction.
+
+```
+pragma lity >= 1.2.7;
+
+contract FreeGasDemo {
+  int a;
+  function test (int input) public freegas returns (int) {
+    a = input;
+    return a;
+  }
+
+  function () public payable {}
+}
+```
+
+Notice that the `payable` function is important as it allows the contract to receive CMTs that will later be used as gas. If the contract address runs out of funds, the `test` function will require gas fees from the function caller.
+
+The screen shots below show the free gas contract function in action.
+
+![Compile](compile.png)
+
+Compile and deploy the contract using Europa IDE and Venus Wallet on CyberMiles blockchain.
+
+![Fund](fund.png)
+
+Fund some CMTs to be used as gas fees to the contract address.
+
+![Execute](execute.png)
+
+Execute the contract function without any gas from the user transaction.
 
