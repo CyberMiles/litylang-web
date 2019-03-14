@@ -28,3 +28,4 @@ contract RandDemo {
 }
 ```
 
+[Read more](https://lity.readthedocs.io/en/latest/rand.html) about the `rand` built-in function.
