@@ -28,9 +28,13 @@ contract FreeGasDemo {
 }
 ```
 
-Notice that the `payable` function is important as it allows the contract to receive CMTs that will later be used as gas. If the contract address runs out of funds, the `test` function will require gas fees from the function caller.
+The `payable` function is important as it allows the contract to receive CMTs that will later be used as gas. If the contract address runs out of funds, the `test` function will require gas fees from the function caller.
 
-The `freegas` transaction has normal `gasPrice` and `gasLimit` parameters, but the actual consumed gas is zero if the contract has funds available.
+> The `freegas` transaction has normal `gasPrice` and `gasLimit` parameters, 
+> but the actual consumed gas is zero if the contract has funds available. 
+> This is different than the "free tx" on the CyberMiles blockchain. 
+> In a CyberMiles transaction, if you set `gasPrice=0` and the transaction's `gasLimit` 
+> is less than 50000, the blockchain would excute the transaction with zero actual gas.
 
 The screen shots below show the free gas contract function in action.
 
