@@ -48,5 +48,7 @@ The screen shots below show the free gas contract function in action.
 
 3 Execute the contract function and the user account balance stays the same.
 
+![Execute](execute.png)
+
 [Read more](https://lity.readthedocs.io/en/latest/freegas.html) about the `freegas` transactions.
 
