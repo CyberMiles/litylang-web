@@ -39,7 +39,7 @@ contract FreeGasDemo {
 }
 ```
 
-The `payable` function is important as it allows the contract to receive CMTs that will later be used as gas. If the contract address runs out of funds, the `test` function will require gas fees from the function caller.
+The `payable` function is important as it allows the contract to receive CMTs that will later be used as gas.
 
 The screen shots below show the free gas contract function in action.
 
