@@ -8,7 +8,7 @@ disabletoc = false
 
 # Secure Random Numbers
 
-Getting secure random numbers is a significant challenge for blockchain smart contracts. Lity pioneers an approach to access a random number series from a seed in the current block header. The random seed is based on the hashes of all transactions in the current block, it is extremely difficult to manipulate even for the validator node that builds and proposes the block.
+Getting secure random numbers is a significant challenge for blockchain smart contracts. Lity pioneers an approach to access random number series from a seed in the current block header. The random seed is based on the hashes of all transactions in the current block, it is extremely difficult to manipulate even for the validator node that builds and proposes the block.
 
 Inside the smart contract, you can access the random number series by simply calling the built-in function `rand()`. Below is an example.
 
