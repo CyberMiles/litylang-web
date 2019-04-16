@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Litylang on The Lity Language and Virtual Machine for Smart Contracts</title>
+    <link>http://www.litylang.org/</link>
+    <description>Recent content in Litylang on The Lity Language and Virtual Machine for Smart Contracts</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="http://www.litylang.org/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+  </channel>
+</rss>

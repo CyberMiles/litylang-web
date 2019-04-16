@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>http://www.litylang.org/getting_started/</loc>
+    <lastmod>2018-06-22T15:00:50+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.litylang.org/performance/</loc>
+    <lastmod>2018-06-22T15:25:25+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.litylang.org/security/</loc>
+    <lastmod>2018-06-22T15:00:50+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.litylang.org/trusted/</loc>
+    <lastmod>2018-06-22T15:00:50+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.litylang.org/rand/</loc>
+    <lastmod>2018-06-22T15:00:50+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.litylang.org/scheduler/</loc>
+    <lastmod>2018-06-22T15:25:32+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.litylang.org/business_rules/</loc>
+    <lastmod>2018-06-22T15:25:11+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.litylang.org/number/</loc>
+    <lastmod>2018-06-22T15:00:50+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.litylang.org/gas/</loc>
+    <lastmod>2018-06-22T15:00:50+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.litylang.org/categories/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.litylang.org/</loc>
+  </url>
+  
+  <url>
+    <loc>http://www.litylang.org/tags/</loc>
+    <priority>0</priority>
+  </url>
+  
+</urlset>

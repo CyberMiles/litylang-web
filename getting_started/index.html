@@ -1,0 +1,676 @@
+<!DOCTYPE html>
+<html lang="en" class="js csstransforms3d">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="generator" content="Hugo 0.56.0-DEV" />
+    <meta name="description" content="Lity is a new programming language for building blockchain smart contracts.">
+
+
+    <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
+<link rel="icon" href="/images/favicon.png" type="image/x-icon" />
+    <title>Getting started :: The Lity Language and Virtual Machine for Smart Contracts</title>
+
+    
+    <meta property="og:title" content="Getting started" />
+    <meta property="og:description" content="Lity is a new programming language for building blockchain smart contracts." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="http://www.litylang.org/getting_started/" />
+    <meta property="og:image" content="http://www.litylang.org/images/lity@3x-pad.jpg" />
+
+    
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-120065893-5', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+    
+    
+    <link href="/css/nucleus.css?1555397061" rel="stylesheet">
+    <link href="/css/font-awesome.min.css?1555397061" rel="stylesheet">
+    <link href="/css/hybrid.css?1555397061" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1555397061" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1555397061" rel="stylesheet">
+    <link href="/css/auto-complete.css?1555397061" rel="stylesheet">
+    <link href="/css/theme.css?1555397061" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1555397061" rel="stylesheet">
+    
+
+    <script src="/js/jquery-2.x.min.js?1555397061"></script>
+    
+    <style type="text/css">
+      :root #header + #content > #left > #rlblock_left{ 
+          display:none !important;
+      }
+      
+    </style>
+    
+  </head>
+  <body class="" data-url="/getting_started/">
+    <nav id="sidebar" class="">
+
+
+
+  <div id="header-wrapper">
+    <div id="header">
+      <a id="logo" href="/">
+  <img src='/images/lity@3x.png' alt="lityLogo" />
+</a>
+
+    </div>
+    
+        <div class="searchbox">
+    <label for="search-by"><i class="fa fa-search"></i></label>
+    <input data-search-input id="search-by" type="text" placeholder="Search...">
+    <span data-search-clear=""><i class="fa fa-close"></i></span>
+</div>
+
+<script type="text/javascript" src="/js/lunr.min.js?1555397061"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1555397061"></script>
+<script type="text/javascript">
+    
+        var baseurl = '\/';
+    
+</script>
+<script type="text/javascript" src="/js/search.js?1555397061"></script>
+
+    
+  </div>
+
+    <div class="highlightable">
+        <ul class="topics">    
+                
+                
+                
+
+
+ 
+  
+    
+    <li data-nav-id="/getting_started/" title="Getting started" class="dd-item 
+        parent
+        active
+        
+        ">
+      <a href="/getting_started/">
+          Getting started
+          
+      </a>
+      <ul id="sidebar-toc">
+          <nav id="TableOfContents">
+<ul>
+<li><a href="#getting-started">Getting Started</a>
+<ul>
+<li>
+<ul>
+<li><a href="#download-and-install">Download and install</a></li>
+<li><a href="#a-reverse-hello-world">A reverse Hello World</a></li>
+<li><a href="#start-a-cybermiles-node">Start a CyberMiles node</a></li>
+<li><a href="#run-the-smart-contract">Run the smart contract</a></li>
+</ul></li>
+</ul></li>
+</ul>
+</nav>
+      </ul>
+      
+              
+    </li>
+  
+ 
+
+                
+                
+
+
+ 
+  
+    
+    <li data-nav-id="/performance/" title="Performance" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/performance/">
+          Performance
+          
+      </a>
+      <ul id="sidebar-toc">
+          <nav id="TableOfContents">
+<ul>
+<li><a href="#performance">Performance</a>
+<ul>
+<li>
+<ul>
+<li><a href="#use">Use</a></li>
+<li><a href="#develop">Develop</a></li>
+<li><a href="#governance">Governance</a></li>
+</ul></li>
+</ul></li>
+</ul>
+</nav>
+      </ul>
+      
+              
+    </li>
+  
+ 
+
+                
+                
+
+
+ 
+  
+    
+    <li data-nav-id="/security/" title="Security" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/security/">
+          Security
+          
+      </a>
+      <ul id="sidebar-toc">
+          <nav id="TableOfContents">
+<ul>
+<li><a href="#security">Security</a>
+<ul>
+<li>
+<ul>
+<li><a href="#erc-checker">ERC checker</a></li>
+<li><a href="#static-analysis">Static analysis</a></li>
+<li><a href="#overflow-protection">Overflow protection</a></li>
+</ul></li>
+</ul></li>
+</ul>
+</nav>
+      </ul>
+      
+              
+    </li>
+  
+ 
+
+                
+                
+
+
+ 
+  
+    
+    <li data-nav-id="/trusted/" title="Oracles" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/trusted/">
+          Oracles
+          
+      </a>
+      <ul id="sidebar-toc">
+          <nav id="TableOfContents">
+<ul>
+<li><a href="#trusted-smart-contracts">Trusted Smart Contracts</a></li>
+</ul>
+</nav>
+      </ul>
+      
+              
+    </li>
+  
+ 
+
+                
+                
+
+
+ 
+  
+    
+    <li data-nav-id="/rand/" title="Random Numbers" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/rand/">
+          Random Numbers
+          
+      </a>
+      <ul id="sidebar-toc">
+          <nav id="TableOfContents">
+<ul>
+<li><a href="#secure-random-numbers">Secure Random Numbers</a></li>
+</ul>
+</nav>
+      </ul>
+      
+              
+    </li>
+  
+ 
+
+                
+                
+
+
+ 
+  
+    
+    <li data-nav-id="/scheduler/" title="Scheduler" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/scheduler/">
+          Scheduler
+          
+      </a>
+      <ul id="sidebar-toc">
+          <nav id="TableOfContents">
+<ul>
+<li><a href="#scheduler">Scheduler</a>
+<ul>
+<li>
+<ul>
+<li><a href="#challenge">Challenge</a></li>
+<li><a href="#cybermiles-support">CyberMiles support</a></li>
+</ul></li>
+</ul></li>
+</ul>
+</nav>
+      </ul>
+      
+              
+    </li>
+  
+ 
+
+                
+                
+
+
+ 
+  
+    
+    <li data-nav-id="/business_rules/" title="Business Rules" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/business_rules/">
+          Business Rules
+          
+      </a>
+      <ul id="sidebar-toc">
+          <nav id="TableOfContents">
+<ul>
+<li><a href="#business-rules">Business Rules</a></li>
+</ul>
+</nav>
+      </ul>
+      
+              
+    </li>
+  
+ 
+
+                
+                
+
+
+ 
+  
+    
+    <li data-nav-id="/number/" title="Real Arithmetic" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/number/">
+          Real Arithmetic
+          
+      </a>
+      <ul id="sidebar-toc">
+          <nav id="TableOfContents">
+<ul>
+<li><a href="#real-number-support">Real Number Support</a></li>
+</ul>
+</nav>
+      </ul>
+      
+              
+    </li>
+  
+ 
+
+                
+                
+
+
+ 
+  
+    
+    <li data-nav-id="/gas/" title="Free Gas" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/gas/">
+          Free Gas
+          
+      </a>
+      <ul id="sidebar-toc">
+          <nav id="TableOfContents">
+<ul>
+<li><a href="#free-gas">&ldquo;Free&rdquo; Gas</a></li>
+</ul>
+</nav>
+      </ul>
+      
+              
+    </li>
+  
+ 
+
+                
+             
+        </ul>
+    
+    
+      <section id="shortcuts">
+        <h3>More</h3>
+        <ul>
+          
+              <li> 
+                  <a class="padding" href="https://github.com/CyberMiles/lity" target="_blank"><i class='fa fa-fw fa-github'></i> Lity source</a>
+              </li>
+          
+              <li> 
+                  <a class="padding" href="http://lity.readthedocs.io/" target="_blank"><i class='fa fa-fw fa-file'></i> Lity docs</a>
+              </li>
+          
+              <li> 
+                  <a class="padding" href="https://github.com/CyberMiles/libeni" target="_blank"><i class='fa fa-fw fa-github'></i> libENI source</a>
+              </li>
+          
+              <li> 
+                  <a class="padding" href="http://libeni.readthedocs.io/" target="_blank"><i class='fa fa-fw fa-file'></i> libENI docs</a>
+              </li>
+          
+              <li> 
+                  <a class="padding" href="https://github.com/CyberMiles/travis" target="_blank"><i class='fa fa-fw fa-github'></i> CyberMiles source</a>
+              </li>
+          
+              <li> 
+                  <a class="padding" href="http://travis.readthedocs.io/" target="_blank"><i class='fa fa-fw fa-file'></i> CyberMiles docs</a>
+              </li>
+          
+        </ul>
+      </section>
+    
+
+    
+    <section id="footer">
+      <center>
+    
+    <a class="github-button" href="https://github.com/CyberMiles/lity/archive/lity.zip" data-icon="octicon-cloud-download" aria-label="Download matcornic/hugo-theme-learn on GitHub">Download</a>
+
+    
+    <a class="github-button" href="https://github.com/CyberMiles/lity" data-icon="octicon-star" data-show-count="true" aria-label="Star matcornic/hugo-theme-learn on GitHub">Star</a>
+
+    
+    <a class="github-button" href="https://github.com/CyberMiles/lity/fork" data-icon="octicon-repo-forked" data-show-count="true" aria-label="Fork matcornic/hugo-theme-learn on GitHub">Fork</a>
+
+</center>
+
+<script async defer src="https://buttons.github.io/buttons.js"></script>
+
+    </section>
+  </div>
+</nav>
+
+
+
+
+
+        <section id="body">
+        <div id="overlay"></div>
+        <div class="padding highlightable">
+            
+              <div>
+                <div id="top-bar">
+                
+                
+                <a id="mobile-logo" href="/">
+                    <img src='/images/lity_blue@3x.png' alt="lityLogo" />
+                  </a>
+                <div id="breadcrumbs" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+                    <span id="sidebar-toggle-span">
+                        <a href="#" id="sidebar-toggle" data-sidebar-toggle="">
+                          <i class="fa fa-bars"></i>
+                        </a>
+                    </span>
+                  
+                  <span id="toc-menu"><i class="fa fa-list-alt"></i></span>
+                  
+                  <span class="links">
+                    
+          
+          
+            
+            
+          
+          
+            <a href='/'>Litylang</a> > Getting started
+          
+         
+          
+           
+                  </span>
+                </div>
+                
+                    <div class="progress">
+    <div class="wrapper">
+<nav id="TableOfContents">
+<ul>
+<li><a href="#getting-started">Getting Started</a>
+<ul>
+<li>
+<ul>
+<li><a href="#download-and-install">Download and install</a></li>
+<li><a href="#a-reverse-hello-world">A reverse Hello World</a></li>
+<li><a href="#start-a-cybermiles-node">Start a CyberMiles node</a></li>
+<li><a href="#run-the-smart-contract">Run the smart contract</a></li>
+</ul></li>
+</ul></li>
+</ul>
+</nav>
+    </div>
+</div>
+
+                
+              </div>
+            </div>
+            
+
+        
+          <div id="chapter">
+        
+        <div id="body-inner">
+          
+
+        
+
+
+
+
+<h1 id="getting-started">Getting Started</h1>
+
+<p>To get started, you will first need to download and install the Lity compiler. Then, write and compile a Lity smart contract. From there you can start a CyberMiles node and execute the smart contract on the blockchain.</p>
+
+<h3 id="download-and-install">Download and install</h3>
+
+<p>To install Lity, <a href="http://lity.readthedocs.io/en/latest/download.html">build from the source on GitHub</a>.</p>
+
+<p>Alternatively, you could <a href="https://github.com/CyberMiles/lity/releases">download a binary release of Lity</a> and extract the executable <code>lityc</code> into a local
+directory <code>~/lityc/</code>.</p>
+
+<h3 id="a-reverse-hello-world">A reverse Hello World</h3>
+
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="//www.youtube.com/embed/9ueVstWTr8Q" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
+
+<p>The code below shows a simple Lity contract with a libENI call.
+It showcases the capability of Lity and libENI.
+While all Solidity smart contracts work on Lity, this example uses Lity-specific features and will not run on Solidity / Ethereum.
+First, create the text file <code>Reverse.lity</code> with the following content.
+It uses a libENI extension function <code>reverse</code>, which is not available
+in standard Solidity.</p>
+
+<pre><code>pragma solidity ^0.4.23;
+  
+contract ReverseContract {
+  function reverse(string input) public returns(string) {
+    string memory output = eni(&quot;reverse&quot;, input);
+    return output;
+  }
+}
+</code></pre>
+
+<p>Next, let&rsquo;s use <code>lityc</code> to compile the source into byte code.</p>
+
+<pre><code>$ ./lityc/lityc --bin Reverse.lity
+======= ./Reverse.lity:ReverseContract =======
+Binary:
+608060405234...
+</code></pre>
+
+<p>Then, we also use <code>lityc</code> to generate the interface definition required
+by the virtual machine to register the contract.</p>
+
+<pre><code>$ ./lityc/lityc --abi Reverse.lity
+======= ./Reverse.lity:ReverseContract =======
+Contract JSON ABI
+[{&quot;constant&quot;:false,&quot;inputs&quot;:[{&quot;name&quot;:&quot;input&quot;,&quot;type&quot;:&quot;string&quot;}],&quot;name&quot;:&quot;reverse&quot;,&quot;outputs&quot;:[{&quot;name&quot;:&quot;&quot;,&quot;type&quot;:&quot;string&quot;}],&quot;payable&quot;:false,&quot;stateMutability&quot;:&quot;nonpayable&quot;,&quot;type&quot;:&quot;function&quot;}]
+</code></pre>
+
+<h3 id="start-a-cybermiles-node">Start a CyberMiles node</h3>
+
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="//www.youtube.com/embed/--FagDzgc-0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
+
+<p>The Lity software we downloaded includes the <code>lityc</code> compiler and development tools.
+But in order to run the smart contract, we also need the Lity virtual machine
+with libENI support. You will need to run a CyberMiles blockchain node for this.</p>
+
+<p>The easiest way to do this is to simply run a <a href="http://travis.readthedocs.io/en/latest/getting-started.html#use-docker">Docker image for a local single node</a>.
+Make sure that you get to the step where you connect to the node&rsquo;s web3-cmt console.</p>
+
+<p>Alternatively, if you are running CentOS or Ubuntu Linux distributions, you
+can also <a href="http://travis.readthedocs.io/en/latest/getting-started.html#build-from-source">build from the source</a>.</p>
+
+<blockquote>
+<p>After you have completed the test on the local single node, you can configure
+the node to <a href="http://travis.readthedocs.io/en/latest/connect-testnet.html">connect to an existing CyberMiles network</a>, and sync to become
+a full node on the blockchain. That allows your smart contracts to run on
+all nodes of the blockchain.</p>
+</blockquote>
+
+<h3 id="run-the-smart-contract">Run the smart contract</h3>
+
+<p>Next, from the attached web3-cmt console, you can use the abi and bytecode generated from the contract above to delpoy the smart contract and receive an address for the deployment.</p>
+
+<pre><code>&gt; personal.unlockAccount(cmt.accounts[0],'1234');
+&gt; bytecode=&quot;0x608060405234801561001057600080fd5b50610272806100206000396000f300608060405260043610610041576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff168063064767aa14610046575b600080fd5b34801561005257600080fd5b506100ad600480360381019080803590602001908201803590602001908080601f0160208091040260200160405190810160405280939291908181526020018383808284378201915050505050509192919290505050610128565b6040518080602001828103825283818151815260200191508051906020019080838360005b838110156100ed5780820151818401526020810190506100d2565b50505050905090810190601f16801561011a5780820d805160018360200d6101000a0d1916815260200191505b509250505060405180910390f35b60608060405160206040519081016040526001905260206040519081016040527f0400000000000000000000000000000000000000000000000000000000000000905260206040519081016040526001905260206040519081016040527f04000000000000000000000000000000000000000000000000000000000000009052602060405190810160405280600090528480516020019081604051908101604052905b6020831015156101f057805182526020820191506020810190506020830392506101cb565b6001836020036101000a0d8019825116818451168082178552505050505050806040518190039052907f7265766572736500000000000000000000000000000000000000000000000000f59050809150509190505600a165627a7a723058204272fd3392dd08f71aad18d99b3593526f5b5b8859012881cab51740081dd8360029&quot;
+&gt; abi = [{&quot;constant&quot;:false,&quot;inputs&quot;:[{&quot;name&quot;:&quot;input&quot;,&quot;type&quot;:&quot;string&quot;}],&quot;name&quot;:&quot;reverse&quot;,&quot;outputs&quot;:[{&quot;name&quot;:&quot;&quot;,&quot;type&quot;:&quot;string&quot;}],&quot;payable&quot;:false,&quot;stateMutability&quot;:&quot;nonpayable&quot;,&quot;type&quot;:&quot;function&quot;}]
+&gt; contract = web3.cmt.contract(abi);
+&gt; contractInstance = contract.new(
+   {
+     from: web3.cmt.accounts[0],
+     data: bytecode,
+     gas: &quot;4700000&quot;
+   },
+   function(e, contract) {
+     console.log(&quot;contract address: &quot; + contract.address);
+     console.log(&quot;transactionHash: &quot; + contract.transactionHash);
+   }
+ );
+</code></pre>
+
+<p>Then, you can call the libENI method on the deployed contract instance.</p>
+
+<pre><code>&gt; contractInstance.reverse.call(&quot;hello&quot;, {from: cmt.accounts[0]})
+olleh
+</code></pre>
+
+<p>That&rsquo;s it!</p>
+
+
+<footer class=" footline" >
+	
+</footer>
+
+        
+            </div> 
+        
+        </div> 
+        
+
+      </div>
+
+    </section>
+    
+    <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
+      <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
+    </div>
+    <script src="/js/clipboard.min.js?1555397061"></script>
+    <script src="/js/perfect-scrollbar.min.js?1555397061"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1555397061"></script>
+    <script src="/js/jquery.sticky.js?1555397061"></script>
+    <script src="/js/featherlight.min.js?1555397061"></script>
+    <script src="/js/html5shiv-printshiv.min.js?1555397061"></script>
+    <script src="/js/highlight.pack.js?1555397061"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <script src="/js/modernizr.custom.71422.js?1555397061"></script>
+    <script src="/js/learn.js?1555397061"></script>
+    <script src="/js/hugo-learn.js?1555397061"></script>
+
+    <link href="/mermaid/mermaid.css?1555397061" type="text/css" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js?1555397061"></script>
+    <script>
+        mermaid.initialize({ startOnLoad: true });
+    </script>
+    
+
+<div class="custom-footer">
+    <center>
+        
+        <a class="github-button" href="https://github.com/CyberMiles/lity/archive/lity.zip" data-icon="octicon-cloud-download" aria-label="Download matcornic/hugo-theme-learn on GitHub">Download</a>
+
+        
+        <a class="github-button" href="https://github.com/CyberMiles/lity" data-icon="octicon-star" data-show-count="true" aria-label="Star matcornic/hugo-theme-learn on GitHub">Star</a>
+
+        
+        <a class="github-button" href="https://github.com/CyberMiles/lity/fork" data-icon="octicon-repo-forked" data-show-count="true"
+            aria-label="Fork matcornic/hugo-theme-learn on GitHub">Fork</a>
+
+    </center>
+    <center class="copyright-text">Copyright © 2018. All rights reserved</center>
+    
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
+</div>
+  </body>
+</html>
